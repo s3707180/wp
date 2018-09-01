@@ -1,0 +1,233 @@
+#search {
+	width: 150px;
+	margin: 0.66em 0.66em 0 0;
+	background: white;
+	/*border: solid 1px #f5aeae;*/
+	border: 1px solid #ccc;
+	padding: 4px 7px;
+	font-size:16px;
+	color:black;
+	box-shadow: 2px 2px 3px #666;
+	transition: background-color 0.5s, border-color 1s;
+	-webkit-transition: background-color 0.5s, border-color 1s;
+	
+	-webkit-appearance: none;
+	-webkit-border-radius: 0;
+	
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+
+#search:focus{
+	background-color: #faaeae;
+	border: 1px solid #f01e1e /*red*/;
+}
+
+.PrimaryNavigation a:link, .PrimaryNavigation a:hover, .PrimaryNavigation a:visited {
+	margin:0px 23px;
+	color:#000000 /*black*/;
+	font-size:30px;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.PrimaryNavigation a:hover {
+	text-shadow: 0px 2px 3px #555;
+}
+
+.bookInfo{
+	float:left; 
+	display:block; 
+	width:210px; 
+	margin:0 10px 20px 15px;
+	background: #FFFFFF;
+	border: 1px solid #C0C0C0;
+	border-bottom-right-radius: 1px;
+	border-bottom-left-radius: 1px;
+}
+
+.bookInfo a:link, .bookInfo a:hover ,.bookInfo a:visited  {
+	color:#f01e1e /*red*/;
+	font-size:14px;
+	font-weight:bold;
+	text-decoration:none;
+}
+
+.bookInfo a:hover {
+	text-shadow: 0px 2px 3px #555;
+    box-shadow: 1px 3px 1px #7C7C7C;
+	-webkit-box-shadow: 1px 3px 1px #7C7C7C;
+}
+
+.fullLightGreyBox {
+	background: #EFEFEF;
+	border: 1px solid #C0C0C0;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+	box-shadow: inset 1px 4px 9px -6px;
+	padding: 10px;
+#	background-image: url("images/logo.png");
+#	opacity: 0.2;
+}
+
+a{
+	text-decoration:none;
+	color: #FF6600 /*orange*/;
+}	
+a:hover{
+	color: #f01e1e /*red*/;
+}
+
+body {
+	background: #F1F1F1 top center no-repeat;
+	text-align: center; 
+}
+		
+.mainContainer {
+	position: relative;
+	margin: 0px auto;
+	width: 980px;
+	margin: 0 auto
+	padding: 0px;
+	overflow: hidden;
+}
+
+h1 {
+	font-family: 'Tw Cen MT Condensed Extra Bold', 'Gill Sans Ultra Bold Condensed', Impact, sans-serif;
+	font-weight: normal;
+	color: #333;
+	text-align: center;
+	font-size: 2.2em;
+	font-variant: small-caps;
+	text-shadow: 1px 1px 0px #fff;
+	margin: 15px 0px;
+}
+
+h2 {
+	font-family: 'Tw Cen MT Condensed', 'Gill Sans Condensed', 'Arial Narrow', Calibri, sans-serif;
+	color: black;
+	font-weight: normal;
+	border-bottom: 1px solid #bbb;
+	font-size: 2.2em;
+	padding-bottom: 8px;
+	text-transform: uppercase;
+	text-shadow: 0px 2px 3px #555;
+	margin: 19px 0;
+	top: 17px;
+}
+
+h3 {
+	font-family: 'Tw Cen MT Condensed', 'Gill Sans Condensed', 'Arial Narrow', Calibri, sans-serif;
+	font-weight: normal;
+	font-size: 1.7em;
+	margin: 15px 20px 15px 0px;
+	text-shadow: 0px 1px 2px #555;
+	border: none;
+	color: black;
+}
+
+.rcol p, .reviews  p, p{
+	margin: 0 auto;
+    text-align: justify;
+	margin-left: 10px;
+}
+
+.rcol p{
+	padding-top:15px;
+    width: 580px;
+	margin-left: 10px;
+}
+
+pre {
+    text-align: left;
+	padding-left:50px;
+}
+.reviews  p, p{
+    width: 920px;
+	margin-bottom: 15px;
+}
+
+.center-justified {
+    margin: 0 auto;
+    text-align: justify;
+    width: 30em;
+}
+
+.reviews h4{
+	font-family: 'Tw Cen MT Condensed', 'Gill Sans Condensed', 'Arial Narrow', Calibri, sans-serif;
+	text-align: left;
+}
+
+h5 {
+	font-family: 'Tw Cen MT Condensed', 'Gill Sans Condensed', 'Arial Narrow', Calibri, sans-serif;
+	font-weight: normal;
+	text-align: left;
+	font-size: 1.7em;
+	margin: 15px 20px 15px 0px;
+	text-shadow: 0px 1px 2px #555;
+	border: none;
+	color: black;
+}
+
+.footer{
+	font-size:12px;
+}
+
+.footer ul{
+	list-style-type:none;
+}
+
+.clear{
+clear:both;
+}
+p {
+	text-align: left;
+	font-family: 'Kotta One', 'Tw Cen MT Condensed', 'Gill Sans Condensed', 'Arial Narrow', Calibri, sans-serif;
+}
+
+li {
+	text-align: left;
+	font-family: 'Kotta One', 'Tw Cen MT Condensed', 'Gill Sans Condensed', 'Arial Narrow', Calibri, sans-serif;
+	font-size:14px;
+}
+@font-face {
+  font-family: 'Kotta One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Kotta One'), local('KottaOne-Regular'), url(http://themes.googleusercontent.com/static/fonts/kottaone/v1/T11KR5KX3fgZhBmu7MWXKj8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+
+section {
+	width: 980px;
+}
+
+section > div {
+	clear: both;
+}
+
+.lcol {
+	Width: 250px;
+	float: left;
+	margin: 0px 0px 0px 0px;
+}
+
+.lcol img {
+	width: 250px	
+}
+
+.rcol {
+	width: 660px;
+	float: right;
+	margin-right: 20px;	
+}
+
+
+,lcol, .rocl {
+	background-color: none	
+}
+
+.errMsg {
+	color:red;
+	font-weight:bold;
+}

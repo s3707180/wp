@@ -11,6 +11,7 @@
 <a href="index.php"><img src="images/logo.png" height="132px" width="438px" >  </a>
 </div>
 
+
 <div class="Header">
   <header style="background: #e4d5d7;">
 	<nav class="PrimaryNavigation">
@@ -27,12 +28,17 @@
 
 <div class="mainContainer">
 <div class="fullLightGreyBox">
+ <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=login" method="post">
+  <div class="container">
+    <label for="email"><b>Username</b></label>
+    <input type="email" placeholder="Enter Username" name="email" required>
 
-<div>
-	<h3>Our Story</h3>
-	<p>We started the Alza shop to promote book reading among younger audience in the digital world. In order to reach the widest audience in Australia, we created this website to make it easier than ever to order new books.</p>
-    <p>Our website was chosen the best new book website of 2017 in Victoria. Your presence in our website hounous us. Please forward your feedback to the following email us <a href="alza@gmail.com"> here</a>.</p>
-</div>
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+
+    <button type="submit">Login</button>
+  </div>
+</form>
 
 <hr />
 
