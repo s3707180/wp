@@ -7,12 +7,12 @@
 </head>
 
 <body>
-<div style="background: #FFFFFF;">
-<a href="index.php"><img src="images/logo.png" height="132px" width="438px" >  </a>
+<div class="logo">
+<a href="index.php"><img src="images/logo.jpg" height="191px" width="300px" >  </a>
 </div>
 
 <div class="Header">
-  <header style="background: #e4d5d7;">
+  <header style="background:#484848 ;">
 	<nav class="PrimaryNavigation">
 	<form method="get" action="/search" id="search1">
       <a href="index.php">Home</a> 
@@ -22,9 +22,8 @@
       <input id="search" type="text" placeholder="search"/>
 	 </form>
 	</nav>
-   </header> 
+   </header>  
 </div>
-
 <div class="mainContainer">
 <div class="fullLightGreyBox">
 
@@ -56,10 +55,10 @@
 </div>
 </div>
 <div class="footer">
-	<footer style="background: #fffffF;">
+<footer style="background: #fffffF;">
 	<table align="center">
 	<tr><td>
-		<img src="images/logo.png" height="131px" width="149px" >	
+			<img src="images/logo.jpg" height="191px" width="300px" >
 	</td>
 	<td>
 		<ul>

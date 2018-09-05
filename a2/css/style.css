@@ -19,6 +19,28 @@
 	border-radius: 10px;
 }
 
+.Header {
+	width:980px;
+	position: relative;
+	margin: 0px auto;
+	
+	padding: 0px;
+	overflow: hidden;
+	
+}
+
+.logo{
+	background: #fffffF;
+	font-size:12px;
+    opacity: 0.9;
+	width:980px;
+	position: relative;
+	margin: 0px auto;
+	
+	padding: 0px;
+	overflow: hidden;
+}
+
 #search:focus{
 	background-color: #faaeae;
 	border: 1px solid #f01e1e /*red*/;
@@ -26,14 +48,14 @@
 
 .PrimaryNavigation a:link, .PrimaryNavigation a:hover, .PrimaryNavigation a:visited {
 	margin:0px 23px;
-	color:#000000 /*black*/;
+	color:#FF0000 /*black*/;
 	font-size:30px;
 	font-weight:bold;
 	text-decoration:none;
 }
 
 .PrimaryNavigation a:hover {
-	text-shadow: 0px 2px 3px #555;
+	text-shadow: 0px 2px 3px #AED6F1;
 }
 
 .bookInfo{
@@ -42,7 +64,7 @@
 	width:210px; 
 	margin:0 10px 20px 15px;
 	background: #FFFFFF;
-	border: 1px solid #C0C0C0;
+	border: 1px solid #FBCEB1;
 	border-bottom-right-radius: 1px;
 	border-bottom-left-radius: 1px;
 }
@@ -61,14 +83,15 @@
 }
 
 .fullLightGreyBox {
-	background: #EFEFEF;
-	border: 1px solid #C0C0C0;
+	background: white;
+    opacity: 0.9;
+	border: 1px solid #FBCEB1;
 	border-bottom-right-radius: 8px;
 	border-bottom-left-radius: 8px;
 	box-shadow: inset 1px 4px 9px -6px;
 	padding: 10px;
-#	background-image: url("images/logo.png");
-#	opacity: 0.2;
+    background-image: url("images/logo.png");
+
 }
 
 a{
@@ -80,7 +103,7 @@ a:hover{
 }
 
 body {
-	background: #F1F1F1 top center no-repeat;
+	background-image: url(https://images.pexels.com/photos/442420/books-shelves-architecture-wood-442420.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
 	text-align: center; 
 }
 		
@@ -91,6 +114,22 @@ body {
 	margin: 0 auto
 	padding: 0px;
 	overflow: hidden;
+   
+}
+.con{
+	height: 300px;
+	width: 300px;
+    border: 25px solid #484848;
+    padding: 25px;
+    
+	text-align: center;
+	position: relative;
+	margin: 0px auto;
+   font-size:23px;
+}
+
+.con button {
+	font-size:20px;
 }
 
 h1 {
@@ -171,10 +210,21 @@ h5 {
 }
 
 .footer{
+  
 	font-size:12px;
+    opacity: 0.9;
+	width:980px;
+	position: relative;
+	margin: 0px auto;	
+	overflow: hidden;
+	border-bottom-right-radius: 8px;
+	border-bottom-left-radius: 8px;
+	box-shadow: inset 1px 4px 9px -6px;
+	padding: 10px;
 }
 
 .footer ul{
+    
 	list-style-type:none;
 }
 

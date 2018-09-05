@@ -7,13 +7,12 @@
 </head>
 
 <body>
-<div style="background: #FFFFFF;">
-<a href="index.php"><img src="images/logo.png" height="132px" width="438px" >  </a>
+<div class="logo">
+<a href="index.php"><img src="images/logo.jpg" height="191px" width="300px" >  </a>
 </div>
 
-
 <div class="Header">
-  <header style="background: #e4d5d7;">
+  <header style="background:#484848 ;">
 	<nav class="PrimaryNavigation">
 	<form method="get" action="/search" id="search1">
       <a href="index.php">Home</a> 
@@ -23,7 +22,7 @@
       <input id="search" type="text" placeholder="search"/>
 	 </form>
 	</nav>
-   </header> 
+   </header>  
 </div>
 
 <div class="mainContainer">
@@ -41,7 +40,7 @@
     <li>ISBN: 978-0-9808523-7-0</li>
 	<li>61pp. pbk</li>
 	<li>RRP: $24.95</li>
-    <li><a href="http://www.johnleonardpress.com/media/File/GraemeMilesSampleforWeb.pdf" target="_blank">Poem preview</a></li>
+   
 </ul>
 </div>
 
@@ -62,7 +61,7 @@
     <li>ISBN: 978-0-9808523-6-3</li>
 	<li>70pp. pbk</li>
 	<li>RRP: $24.95</li>
-    <li><a href="http://www.johnleonardpress.com/media/File/BrookEmeryCollusionSampleforWeb.pdf" target="_blank">Poem preview</a></li>
+    
 </ul>
 </div>
 
@@ -73,7 +72,7 @@
     <li>ISBN: 978-0-9808523-4-9</li>
 	<li>310pp. pbk</li>
 	<li>RRP: $32.95</li>
-    <li><a href="http://www.johnleonardpress.com/media/File/SteeleBtVfSampleWeb.pdf" target="_blank">Poem preview</a></li>
+  
 </ul>
 </div>
 <div class="clear"></div>
@@ -86,7 +85,7 @@
 	<footer style="background: #fffffF;">
 	<table align="center">
 	<tr><td>
-		<img src="images/logo.png" height="131px" width="149px" >	
+			<img src="images/logo.jpg" height="191px" width="300px" >
 	</td>
 	<td>
 		<ul>

@@ -9,22 +9,22 @@
 </head>
 
 <body>
-<div style="background: #FFFFFF;">
-<a href="index.html"><img src="images/logo.png" height="132px" width="438px" >  </a>
+<div class="logo">
+<a href="index.php"><img src="images/logo.jpg" height="191px" width="300px" >  </a>
 </div>
 
 <div class="Header">
-  <header style="background: #e4d5d7;">
+  <header style="background:#484848 ;">
 	<nav class="PrimaryNavigation">
 	<form method="get" action="/search" id="search1">
       <a href="index.php">Home</a> 
       <a href="products.php">Products</a>
 	   <a href="login.php">Log-in</a>
-      <a href="aboutus.html">About Us</a>
+      <a href="aboutus.php">About Us</a>
       <input id="search" type="text" placeholder="search"/>
 	 </form>
 	</nav>
-   </header> 
+   </header>  
 </div>
 
 <div class="mainContainer">
@@ -49,9 +49,9 @@
     <li>ISBN: 978-0-9808523-4-9</li>
 	<li>310pp. pbk</li>
 	
-    <li><a href="http://www.johnleonardpress.com/media/File/SteeleBtVfSampleWeb.pdf" target="_blank">Poem preview</a></li>
+   
 </ul>
-<form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=product" method="post">
+<form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=product" method="post" onsubmit='return formValidate();'>
 <div class="product form">
     <table style="width:100%">
   <tr>
@@ -90,7 +90,7 @@
 <p>Peter Steele, who was born in Perth in 1939, moved to Melbourne in 1957 to join the Jesuits, of whom he remains a member. He is Professor Emeritus at the University of Melbourne, his base for a lifetime of teaching and writing, along with the equivalent of several years at universities in Chicago, New York and Washington DC. Alongside numerous books of poetry, including ‘The Gossip and the Wine’ (JLP, 2010) and ‘White Knight with Beebox: New and Selected Poems’ (JLP, 2008),  he has published books of literary criticism, including studies of Jonathan Swift and Peter Porter.</p><hr></hr>
     </div>
 
-<img class="lcol" src="http://www.johnleonardpress.com/media/Image/PeterSteele-3_1.jpg" alt="Peter Steele photo" />
+<img class="lcol" src="http://www.abc.net.au/radionational/image/5957904-3x2-340x227.jpg" alt="Peter Steele photo" />
 </div>
 <!--REVIEW 1-->
 <div class="reviews"> 
@@ -201,7 +201,7 @@
 	<footer style="background: #fffffF;">
 	<table align="center">
 	<tr><td>
-		<img src="images/logo.png" height="131px" width="149px" >	
+			<img src="images/logo.jpg" height="191px" width="300px" >
 	</td>
 	<td>
 		<ul>

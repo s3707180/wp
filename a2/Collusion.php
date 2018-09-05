@@ -8,22 +8,22 @@
 </head>
 
 <body>
-<div style="background: #FFFFFF;">
-<a href="index.html"><img src="images/logo.png" height="132px" width="438px" >  </a>
+<div class="logo">
+<a href="index.php"><img src="images/logo.jpg" height="191px" width="300px" >  </a>
 </div>
 
 <div class="Header">
-  <header style="background: #e4d5d7;">
+  <header style="background:#484848 ;">
 	<nav class="PrimaryNavigation">
 	<form method="get" action="/search" id="search1">
       <a href="index.php">Home</a> 
       <a href="products.php">Products</a>
 	   <a href="login.php">Log-in</a>
-      <a href="aboutus.html">About Us</a>
+      <a href="aboutus.php">About Us</a>
       <input id="search" type="text" placeholder="search"/>
 	 </form>
 	</nav>
-   </header> 
+   </header>  
 </div>
 
 <div class="mainContainer">
@@ -47,9 +47,9 @@
 <ul>    
     <li>ISBN: 978-0-9808523-6-3</li>
 	<li>70pp. pbk</li>
-    <li><a href="http://www.johnleonardpress.com/media/File/BrookEmeryCollusionSampleforWeb.pdf" target="_blank">Poem preview</a></li>
+    
 </ul>
-<form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=product" method="post">
+<form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=product" method="post" onsubmit='return formValidate();'>
 <div class="product form">
    <table style="width:100%">
   <tr>
@@ -89,23 +89,13 @@
 <p>Brook Emery lives near the surf in Sydney, where he was born in 1949. He has published three books of poetry, and dug my fingers in the sand  (FIP, 2000), which won the Judith Wright Calanthe Prize in the Queensland Premier’s Awards, Misplaced Heart (FIP, 2003) and Uncommon Light (FIP, 2007). All three were short-listed for the Kenneth Slessor Prize in the NSW Premier’s Awards. A former teacher, he directed the Australian Poetry Festival in 2008 and 2010 and was until recently Chairperson of the Poets Union.</p><hr></hr>
     </div>
 
-<img class="lcol" src="http://www.johnleonardpress.com/media/Image/Brook_photo_1.jpg" alt="Brook Emery photo" />
+<img class="lcol" src="https://www.poetryarchive.org/sites/default/files/styles/220x170-live-recordings-block/public/poet_photos/emeryl.jpg?itok=grqPq-qG" alt="Brook Emery photo"  height="140px" width="250px" />
 </div>
 <!--REVIEW 1-->
 <div class="reviews"> 
 	<h3>REVIEWS</h3>
     
-    <h4>From Ali Jane Smith,<a href="www.theaustralian.com.au/arts/review/certainties-crumble-in-the-poetic-quest/story-fn9n8gph-1226573460093"> The Australian</a>, February 9, 2013:</h4>
-
-<p>Brook Emery's Collusion manages to combine equanimity and equivocation. Even as he wrestles with profound and complex questions, Emery retains a core of serenity.</p>
-
-<p>There are moments of deep contentment, "as though the sun had circled thus for us", the warm and hopeful presence of a grandchild, sleeping and stirring through storms meteorological and metaphysical, and there are the fears that the abject body cannot escape, though in this case of incapacity rather than death.</p>
-
-<p>In one vivid image, a "jacaranda/ against the church's mortared, crumbling mass,/ mauve and stunning and substantial as it is -/ all indirect flowering of twists and turns", at first suggests there is solidity to be found in the natural world rather than the crumbling church, but this poet goes on to upset any such easy reading, noting that the tree "seems uncontained, as though at any moment/ it might escape the rooted, understandable restraints/ of space and time".</p>
-
-<p>Emery describes the jacaranda in terms that reveal it as contingent and temporary as the ruined church. These are the poems of an unfaltering observer, filled with questions and meditations that ripple through the book as the poet works at unravelling arguments and lacing them together again.</p>
-
-<p>Ultimately, in Collusion, only uncertainty is to be depended on.</p>
+   
 
 <hr></hr>
 <!--REVIEW 2-->
@@ -282,7 +272,7 @@ the speeding train. I reach for them. They reach for me.</pre>
 	<footer style="background: #fffffF;">
 	<table align="center">
 	<tr><td>
-		<img src="images/logo.png" height="131px" width="149px" >	
+			<img src="images/logo.jpg" height="191px" width="300px" >	
 	</td>
 	<td>
 		<ul>

@@ -7,12 +7,14 @@
 </head>
 
 <body>
-<div style="background: #FFFFFF;">
-<a href="index.php"><img src="images/logo.png" height="132px" width="438px" >  </a>
+<div class="logo">
+
+<a href="index.php"><img src="images/logo.jpg" height="191px" width="300px" >  </a>
+
 </div>
 
-<div class="Header">
-  <header style="background: #e4d5d7;">
+<div class="Header" >
+  <header style="background:#484848 ;" >
 	<nav class="PrimaryNavigation">
 	<form method="get" action="/search" id="search1">
       <a href="index.php">Home</a> 
@@ -22,16 +24,20 @@
       <input id="search" type="text" placeholder="search"/>
 	 </form>
 	</nav>
-   </header> 
+   </header>  
 </div>
 
 <div class="mainContainer">
 <div class="fullLightGreyBox">
 
 <div>
-	<h3>Our Story</h3>
+	<h3>Our Story</h3>  <img src="https://images.pexels.com/photos/590493/pexels-photo-590493.jpeg?auto=compress&cs=tinysrgb&h=350"/>
+   
+         
 	<p>We started the Alza shop to promote book reading among younger audience in the digital world. In order to reach the widest audience in Australia, we created this website to make it easier than ever to order new books.</p>
     <p>Our website was chosen the best new book website of 2017 in Victoria. Your presence in our website hounous us. Please forward your feedback to the following email us <a href="alza@gmail.com"> here</a>.</p>
+    
+   
 </div>
 
 <hr />
@@ -46,7 +52,7 @@
 	<footer style="background: #fffffF;">
 	<table align="center">
 	<tr><td>
-		<img src="images/logo.png" height="131px" width="149px" >	
+			<img src="images/logo.jpg" height="191px" width="300px" >	
 	</td>
 	<td>
 		<ul>

@@ -8,24 +8,23 @@
 </head>
 
 <body>
-<div style="background: #FFFFFF;">
-<a href="index.html"><img src="images/logo.png" height="132px" width="438px" >  </a>
+<div class="logo">
+<a href="index.php"><img src="images/logo.jpg" height="191px" width="300px" >  </a>
 </div>
 
 <div class="Header">
-  <header style="background: #e4d5d7;">
+  <header style="background:#484848 ;">
 	<nav class="PrimaryNavigation">
 	<form method="get" action="/search" id="search1">
       <a href="index.php">Home</a> 
       <a href="products.php">Products</a>
 	   <a href="login.php">Log-in</a>
-      <a href="aboutus.html">About Us</a>
+      <a href="aboutus.php">About Us</a>
       <input id="search" type="text" placeholder="search"/>
 	 </form>
 	</nav>
-   </header> 
+   </header>  
 </div>
-
 <div class="mainContainer">
 <div class="fullLightGreyBox">
 
@@ -38,11 +37,9 @@
     
     <h5>About book</h5>
 
-    <p>Although we think of the world as spherical, our main directions within it remain ‘Down’, Across’ and ‘Up’. These primary directions mark the divisions of this restless book of poems, Recurrence, by Graeme Miles. ‘Up’ and ‘Down’ in their different ways move outside the human game, but ‘Across’ travels - Australia, India and Europe – moving around poles of orientation and disorientation, sleep and waking.</p>
+    <p>In spite of the fact that we think about the world as circular, our primary headings inside it stay 'Down', Across' and 'Up'. These essential bearings stamp the divisions of this anxious book of sonnets, Recurrence, by Graeme Miles. 'Up' and 'Down' in their distinctive courses move outside the human diversion, however 'Over' voyages - Australia, India and Europe – moving around shafts of introduction and confusion, rest and waking.</p>
 
-    <p>Miles’ poetry often turns to myth and ritual, but is not absorbed in the past. As the title implies, it is concerned with the resurgence of the apparently past in the present. It is a book of metamorphoses and returns.</p>
-
-    <p>Central to the collection are some longer poems and sequences. ‘Photis’ is an oblique short fiction, moving somewhere alongside Apuleius’ Golden Ass. ‘Verandah’ and ‘Causes’ explore the traces of personal and collective histories, and the subterranean roots of the domestic and familial. Recurrence is an enticing collection that rewards a leisurely reading.</p><hr></hr>
+    <p>Central to the collection are some longer poems and sequences. 'Photis' is a diagonal short fiction, moving some place nearby Apuleius' Golden Ass. 'Verandah' and 'Causes' investigate the hints of individual and aggregate narratives, and the underground underlying foundations of the local and familial. Repeat is an alluring accumulation that rewards a lackadaisical perusing</p><hr></hr>
 	</div>
 
 
@@ -53,7 +50,7 @@
 <ul>    
     <li>ISBN: 978-0-9808523-7-0</li>
 	<li>61pp. pbk</li>
-    <li><a href="http://www.johnleonardpress.com/media/File/GraemeMilesSampleforWeb.pdf" target="_blank">Poem preview</a></li>
+   
 </ul>
 <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=product" method="post" onsubmit='return formValidate();'>
 <div class="product_form">
@@ -94,16 +91,16 @@
 	<div class="rcol">
 	<h5>About Author</h5>
 
-    <p>Graeme Miles was born in Perth in 1976. His first collection of poems, Phosphorescence (Fremantle Press, 2006), was shortlisted for the WA Premier’s Prize. After a Ph.D. in Classics at the University of WA, he was an Asialink writer in residence at the University of Madras, then a research fellow at the University of Ghent, Belgium. He now lives in Hobart and lectures in Classics at the University of Tasmania.</p><hr></hr>
+    <p>Graeme Miles was born in Perth in 1976. His first collection of poems, Phosphorescence (Fremantle Press, 2006), was shortlisted for the WA Premier's Prize. After a Ph.D. in Classics at the University of WA, he was an Asialink author in home at the University of Madras, at that point an exploration individual at the University of Ghent, Belgium. He currently lives in Hobart and addresses in Classics at the University of Tasmania.</p><hr></hr>
     </div>
     
-<img class="lcol" src="http://www.johnleonardpress.com/media/Image/GraemeMilesPhoto_1.jpg" alt="Graem Miles photo" />
+<img class="lcol" src=http://www.utas.edu.au/__data/assets/image/0004/724981/varieties/profile_image.jpg height="170px" width="250px" alt="Graem Miles photo" />
 </div>    
 <!--REVIEW 1--> 
 <div class="reviews">   
     <h3>REVIEWS</h3>
 
-    <h4>From Martin Duwell, <a href="http://www.hotsdots.com/poetry/author/mduwell/">Australian Poetry Review</a>, February 1, 2013:</h4>
+    <h4>From Martin Duwell, <a href="http://www.australianpoetryreview.com.au/?s=RECURRENCE&submit=Search">Australian Poetry Review</a>, February 1, 2013:</h4>
 
     <p>This book gives us an opportunity for a second look at the challenging and sophisticated work of Graeme Miles, his first book, Phosphorescence, having been published in 2006. In one sense nothing has changed: he remains a powerful lyric poet – his poems almost always have enough self-confidence to stay upright as well as walk with their own gait – the exact nature of whose poetic sensibility is very difficult to grasp. The first poem of that first book, “Nest”, is an introduction to at least part of the Miles method:</p>
 
@@ -147,92 +144,6 @@
     with a last house-load of furniture . . .</pre>
     
     <p>But this poem goes on to ask about the pits of others, especially those who have disappeared into the author’s own pit. It is, as its title says, really a poem about the inter-relationship of the experience of subjectivities; we are experiences for others as they are for us. Continually meditating on what we are to others – apart from our usual egoistic obsession with what we are to ourselves – shakes our sense of our own identity. After returning to his own pit (he hears it “slurp as something else fell in”) he sees flecks on the surface spelling out a message, “’What’s it like / to be you?’ And when you looked closer, / ‘Is it like anything?’”</p>
-
-   <p> The same sequence has a descent poem, “Forgetting to Laugh”, in which “When you’ve drunk the water to remember, / and the water to forget, they slide you down / into a dug-out cave”. What follows is a kind of cross between a Mithraic rebirth initiation, an MRI scan and the act of dreaming, followed by the everyday – but still mysterious – process of waking. What is typical here is the way in which mythical, allegorical and metaphorical meanings, distinctive to Miles’s cast of thought, are held in suspension.</p>
-
-    <p>The book’s final section (to proceed out of order) ought to be a simple inversion of the first but turns out to be rather different. Certainly, in Miles’s poetry, the view upwards doesn’t involve any simple-minded transcendence. When the eternal is considered, as in “Two Guesses at Immortality”, there is no superior, heavenly reality. The two possibilities are either a kind of eternal present containing all the past (“Everything is here and everyone. / You’re home once and for all / at the moment when it’s all new again.”) or a kind of Groundhog Day endless recurrence (“the one day repeats itself / with its long night to be slept through”.</p>
-
-   <p> In other poems, like “Dioscuri”, the emphasis is on the reciprocity between the upper and lower worlds though “Above, Below” contradicts the old relationship of as above so below to contrast the love of the immortals for mortals (“a gold-haired boy or girl . . . too squeamish to stay / for the squalid fact of your death”) for that of mortals for mortals – in this case parents for children:</p>
-
-    <pre>
-    But the ones who wait below
-    will only be as frightening as necessity,
-    quiet farmers keeping their kids
-    from the dangerous machines and the gun.</pre>
-
-    <p>One of the metaphoric associations of downwards in the earlier poems is the idea of descent through the family line and so it is, in a kind of way, logical that a poem about the poet’s parents and grandparent should be associated with a look upwards. “Verandah” is a really fine poem, familiar from its appearance in John Leonard’s Young Poets: An Australian Anthology, and though verandahs – the quintessential Australian liminal space – might suggest movement across, there is a certain rightness in this poem’s appearing in the final, Up section. It is also, of course, an example of a modern version of a classical invocation, summoning mother and father out of the past into the present.</p>
-
-    <p>Ultimately the vision affirmed is a humanist one and two poems, “Shivery to Think of the Long Spaces” and “Ascesis” make this fairly clear. The former begins as a view upwards to the stars, recalling Pascal’s or perhaps Slessor’s poem ‘s fear of the spaces between the stars, spaces which have become even more mindboggling vast since the twentieth century’s development of cosmological measurement. The result of this perspective is described as “shivery while it’s measured / by this piece of skin” but the poem goes on to imagine a perspective beyond humanism where there is “object with no subject” where “the suns flame silently” in their death throes “and don’t return from their last / going under, don’t care to”.</p>
-
-    <p>The book’s final poem, “Ascesis”, seems to have an unequivocally humanist perspective as it mocks the results of labouring to be released upwards into the cosmos, free of the earthbinding sins of the body:</p>
-
-    <pre>
-    They let go,
-    lift clear of weather,
-    soil’s vapours
-    that tint the mind like plot.
-    . . . . .
-    Free of conversation,
-    the long dispute of history, language
-    is crisp as salt, and with no air
-    to talk through their words are flawless,
-    discrete and unanswerable.</pre>
-
-    <p>Both of these poems casually mention orbits and straight lines and one can’t help feeling that this interest derives from “Circle and Line” in Phosphorescence. Miles’s poetic world, as readers who have got this far will register, is a complex one.</p>
-
-    <p>A reader who expected the Up poems to be about transcendence might well come to the book’s middle section expecting poems of narrative and Ovidian transformation and, it is true, there is a lot of that to be found there. It begins with “Photis”, a suite of poems (also familiar from Leonard’s anthology) that form a narrative about an artist inclined to bring out animal shapes in the bodies of those who sit for portraits. A lover whose self-image is that of a hawk finds through the process of art that his totemic animal is, instead, the ass (for those of us who missed it, the book’s blurb points out an allusion here to Apuleius). When a baby is born – going through its own metamorphoses in the womb and then outside – it becomes an anthology of animals:</p>
-
-    <pre>
-    Your soft skin is full of animals. There are
-    fishes in the movement of your sucking cheeks, reptiles
-    in the glaze of your eyes overtired, the stillness of a kangaroo
-    when you watch light slide
-    over the ceiling . . . . .</pre>
-
-    <p>And the artist’s work undergoes an equally profound metamorphosis, focussing on the world her child might live in rather than the animals under its skin: “she paints the night as a newsreel of frightening things, / waters above and below”.</p>
-
-    <p>“Ariadne on Naxos”, based on the version of the story found in Plutarch’s life of Theseus, focusses on the way an individual can transform into a complicated set of rituals; “Aggregore” revisits the idea of a child’s evolution in the womb; “At the End of the Seventies – Streets in Marmion” reproduces the way in which a beachscape is transformed when it is seen by moonlight; “Chennai” looks at the way individuals (or families) are always the centre of their own universe and carry their own gods and experiences with them in environments that are utterly different and a related poem, “Diminuendo”, imagines, from the distant location of India, all of the houses previously lived in since birth as a concertina opened out into one of those medieval maps.</p>
-
-    <p>This threefold division of the book is useful, but I cannot help feeling that it isn’t much more than a guide, uncovering only a small portion of what is in these poems and what animates them and gives them their integrity. If I had to focus on a single poem as an entrance into the poems of this book I would choose one from the first section, “Purusha”, which links the Norse proto-god Ymir with a similar figure from Indian mythology:</p>
-
-    <pre>
-    Ymir, who is Purusha, the Person, is sacrificed
-    but goes on. Its skin is cinematic, the light
-    breaks through it. Endless eyes watch it
-    sliding by. Its body is standing waves
-    frozen, and it crinkles with crystals of ice,
-    empties into the roaring absorption, the nuclear
-    introspection of suns. Its sound is the crowd
-    roaring in Geiger-counters, it goes on forever
-    and mostly is invisible.
-
-    Moves down
-    and down is the static blur of sandgrains, the place
-    that barters crops for corpses.
-    Moves across
-    inventing plot, walks on or runs
-    forever in Zeno’s physics.
-
-    Moves up
-    spies out the thinning, the spinning direction
-    of vertigo.
-
-    It’s promiscuous and virginal, celibate
-    and incestuous. It’s family at war with itself.
-    When a standing ape looks up it sees
-    air catch fire, water
-    thicken with mud, harden to land.
-    Objects are smashed in the slow riot
-    and the prickling of skin when reading a poem
-    is each pore expecting a bruise
-    to cover it. And the poems fit together
-    like a dry-stone wall, jagged edge
-    to edge, just making do.</pre>
-
-    <p>Perhaps this should be thought of not as poem-as-key but as poem-as-digest (or, anatomy) since one can hear nearly all of the poems in Recurrence in this single work. The central section is a compressed explanation of the three directions and the over-riding image of the fate of Ymir (whose blood becomes the sea, whose skull becomes the sky and whose bones and teeth become rocks) as a sacrifice whose body goes on changing and expressing itself in the activities of the humans who live on and within him echoes throughout the book, down even to the poem about the child’s cutting his first teeth. Even the interest in light in the second and third lines recalls a number of poems.</p>
-
-    <p>Recurrence certainly complicates the world of Phosphorescence (itself complicated enough) and it would take a review longer than this to go back to that first book and reread it in the light of this second one. Eventually it will have to be done but I will leave that for the appearance of Miles’s third book – something that admirers like myself will hope happens quickly.</p>
-
 <hr></hr>
 <!--REVIEW 2-->
     <h4>From Ali Jane Smith, <a href="http://www.theaustralian.com.au/arts/review/lasting-souvenirs-of-the-roads-travelled/story-fn9n8gph-1226597500607">The Australian</a>, March 16, 2013:</h4>
@@ -260,7 +171,7 @@
 	<footer style="background: #fffffF;">
 	<table align="center">
 	<tr><td>
-		<img src="images/logo.png" height="131px" width="149px" >	
+			<img src="images/logo.jpg" height="191px" width="300px" >	
 	</td>
 	<td>
 		<ul>

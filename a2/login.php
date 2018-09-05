@@ -7,13 +7,12 @@
 </head>
 
 <body>
-<div style="background: #FFFFFF;">
-<a href="index.php"><img src="images/logo.png" height="132px" width="438px" >  </a>
+<div class="logo">
+<a href="index.php"><img src="images/logo.jpg" height="191px" width="300px" >  </a>
 </div>
 
-
 <div class="Header">
-  <header style="background: #e4d5d7;">
+  <header style="background:#484848 ;">
 	<nav class="PrimaryNavigation">
 	<form method="get" action="/search" id="search1">
       <a href="index.php">Home</a> 
@@ -23,20 +22,27 @@
       <input id="search" type="text" placeholder="search"/>
 	 </form>
 	</nav>
-   </header> 
+   </header>  
 </div>
+
 
 <div class="mainContainer">
 <div class="fullLightGreyBox">
  <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=login" method="post">
   <div class="container">
+  <div class = "con">
     <label for="email"><b>Username</b></label>
-    <input type="email" placeholder="Enter Username" name="email" required>
-
+    <input type="email" placeholder="Enter Username" name="email" style="width:50%; height:12%" required><br>
+	
+<br>
     <label for="password"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="password" required>
+    <input type="password" placeholder="Enter Password" name="password" style="width:50%; height:12%" required><br>
+	<br>
 
-    <button type="submit">Login</button>
+    <button type="submit" style="width:85%; height:12%"  ><b>Login<b></button><br>
+	
+<img src="images/logo.jpg" height="150px" width="230px" >   
+   </div> 
   </div>
 </form>
 
@@ -52,7 +58,7 @@
 	<footer style="background: #fffffF;">
 	<table align="center">
 	<tr><td>
-		<img src="images/logo.png" height="131px" width="149px" >	
+			<img src="images/logo.jpg" height="191px" width="300px" >	
 	</td>
 	<td>
 		<ul>
