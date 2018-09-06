@@ -111,7 +111,7 @@ body {
 	position: relative;
 	margin: 0px auto;
 	width: 980px;
-	margin: 0 auto
+	margin: 0 auto;
 	padding: 0px;
 	overflow: hidden;
    
@@ -263,7 +263,7 @@ section > div {
 }
 
 .lcol img {
-	width: 250px	
+	width: 250px;
 }
 
 .rcol {
@@ -273,8 +273,8 @@ section > div {
 }
 
 
-,lcol, .rocl {
-	background-color: none	
+.lcol, .rocl {
+	background-color: transparent;	
 }
 
 .errMsg {

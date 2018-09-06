@@ -48,8 +48,6 @@
 <ul>    
     <li>ISBN: 978-0-9808523-4-9</li>
 	<li>310pp. pbk</li>
-	
-   
 </ul>
 <form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=product" method="post" onsubmit='return formValidate();'>
 <div class="product form">
@@ -77,20 +75,21 @@
     <th colspan=2 > <button type="submit" style="width:90%" >Add</button></th> 
   </tr>
   </table>
-
+</div>
 </form>
-	</div>
+<img class="lcol" src="http://www.abc.net.au/radionational/image/5957904-3x2-340x227.jpg" alt="Peter Steele photo" />
 </div>
 <!--ABOUT AUTHOR-->
 <div>
+
 	<div class="rcol">
 	<h5>About Author</h5>
     
 
-<p>Peter Steele, who was born in Perth in 1939, moved to Melbourne in 1957 to join the Jesuits, of whom he remains a member. He is Professor Emeritus at the University of Melbourne, his base for a lifetime of teaching and writing, along with the equivalent of several years at universities in Chicago, New York and Washington DC. Alongside numerous books of poetry, including ‘The Gossip and the Wine’ (JLP, 2010) and ‘White Knight with Beebox: New and Selected Poems’ (JLP, 2008),  he has published books of literary criticism, including studies of Jonathan Swift and Peter Porter.</p><hr></hr>
-    </div>
+	<p>Peter Steele, who was born in Perth in 1939, moved to Melbourne in 1957 to join the Jesuits, of whom he remains a member. He is Professor Emeritus at the University of Melbourne, his base for a lifetime of teaching and writing, along with the equivalent of several years at universities in Chicago, New York and Washington DC. Alongside numerous books of poetry, including ‘The Gossip and the Wine’ (JLP, 2010) and ‘White Knight with Beebox: New and Selected Poems’ (JLP, 2008),  he has published books of literary criticism, including studies of Jonathan Swift and Peter Porter.</p><hr></hr>
+	</div>
 
-<img class="lcol" src="http://www.abc.net.au/radionational/image/5957904-3x2-340x227.jpg" alt="Peter Steele photo" />
+
 </div>
 <!--REVIEW 1-->
 <div class="reviews"> 
@@ -197,6 +196,7 @@
 </div>
 </section>
 </div>
+</div>
 <div class="footer">
 	<footer style="background: #fffffF;">
 	<table align="center">
@@ -214,6 +214,6 @@
 	</td></tr>
 	</table>
 	</footer> 
-
+</div>
 </body>
 </html>

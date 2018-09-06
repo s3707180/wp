@@ -180,6 +180,7 @@ There is no other wisdom to attain.’ (p54)</pre>
 </div>
 </section>
 </div>
+</div>
 <div class="footer">
 	<footer style="background: #fffffF;">
     
@@ -198,6 +199,6 @@ There is no other wisdom to attain.’ (p54)</pre>
 	</td></tr>
 	</table>
 	</footer> 
-  
+ </div>
 </body>
 </html>

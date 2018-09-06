@@ -78,8 +78,9 @@
 
   </div>
 </form>
+<img class="lcol" src="https://www.poetryarchive.org/sites/default/files/styles/220x170-live-recordings-block/public/poet_photos/emeryl.jpg?itok=grqPq-qG" alt="Brook Emery photo"  height="140px" width="250px" />
 	</div>
-</div>
+
 <!--ABOUT AUTHOR-->
 <div>
 	<div class="rcol">
@@ -89,15 +90,13 @@
 <p>Brook Emery lives near the surf in Sydney, where he was born in 1949. He has published three books of poetry, and dug my fingers in the sand  (FIP, 2000), which won the Judith Wright Calanthe Prize in the Queensland Premier’s Awards, Misplaced Heart (FIP, 2003) and Uncommon Light (FIP, 2007). All three were short-listed for the Kenneth Slessor Prize in the NSW Premier’s Awards. A former teacher, he directed the Australian Poetry Festival in 2008 and 2010 and was until recently Chairperson of the Poets Union.</p><hr></hr>
     </div>
 
-<img class="lcol" src="https://www.poetryarchive.org/sites/default/files/styles/220x170-live-recordings-block/public/poet_photos/emeryl.jpg?itok=grqPq-qG" alt="Brook Emery photo"  height="140px" width="250px" />
+
 </div>
 <!--REVIEW 1-->
 <div class="reviews"> 
 	<h3>REVIEWS</h3>
     
-   
-
-<hr></hr>
+ 
 <!--REVIEW 2-->
     <h4>From Martin Duwell,<a href="http://www.hotsdots.com/poetry/2013/04/brook-emery-collusion/"> Australian Poetry Review</a>, April 1, 2013: </h4>
     
@@ -268,6 +267,7 @@ the speeding train. I reach for them. They reach for me.</pre>
 </div>
 </section>
 </div>
+</div>
 <div class="footer">
 	<footer style="background: #fffffF;">
 	<table align="center">
@@ -285,6 +285,6 @@ the speeding train. I reach for them. They reach for me.</pre>
 	</td></tr>
 	</table>
 	</footer> 
-
+</div>
 </body>
 </html>
