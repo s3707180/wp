@@ -77,14 +77,14 @@
 	<th colspan=2> <label class='errMsg' id="errorMessage" hidden > Error Enter Postive Integer</label></th>
   </tr>
    <tr>
-    <th colspan=2 > <button type="submit" style="width:90%" >Add</button></th> 
+   <th colspan=2 > <button type="submit" style="width:90%" >Add</button></th>
+   <img class="lcol" src=http://www.utas.edu.au/__data/assets/image/0004/724981/varieties/profile_image.jpg height="170px" width="250px" alt="Graem Miles photo" />
   </tr>
   </table>
 
   </div>
 </form>
 
-</div>
 </div>
 <!--ABOUT AUTHOR-->
 <div>
@@ -94,7 +94,7 @@
     <p>Graeme Miles was born in Perth in 1976. His first collection of poems, Phosphorescence (Fremantle Press, 2006), was shortlisted for the WA Premier's Prize. After a Ph.D. in Classics at the University of WA, he was an Asialink author in home at the University of Madras, at that point an exploration individual at the University of Ghent, Belgium. He currently lives in Hobart and addresses in Classics at the University of Tasmania.</p><hr></hr>
     </div>
     
-<img class="lcol" src=http://www.utas.edu.au/__data/assets/image/0004/724981/varieties/profile_image.jpg height="170px" width="250px" alt="Graem Miles photo" />
+
 </div>    
 <!--REVIEW 1--> 
 <div class="reviews">   
