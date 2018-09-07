@@ -48,6 +48,7 @@
 								</div>
 
 								<div class="lcol"> 
+                                     <!-- Original image below of the coverpage of Cumulus book cover the original photo can be fond at https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiuoPPcuqbdAhVOA4gKHfBbA7AQjRx6BAgBEAU&url=https%3A%2F%2Fsydneyreviewofbooks.com%2Fprecarious-images%2F&psig=AOvVaw3kcFMHyFWmuBQdWvekHQBE&ust=1536326064487646 -->
 									<img src="images/cumulusimage_1.jpg" alt="Cumulus book cover" />
 									<ul>    
 										<li>ISBN: 978-0-9808523-5-6</li>
@@ -116,9 +117,10 @@
 													<p>When a landscape is sparsely populated, the eye is favored over the ear. Robert Gray spent his childhood in the brilliant coastal spaces of the mid-North Coast of New South Wales, and he has spent his life looking at things, and in searching for the words for them.</p>
 													<hr/>
 												</div>
-
+                                                <!-- Original image below is the profile picture of the writer Robert Gray  the original photo can be fond at http://1.bp.blogspot.com/-amxY70ojGhI/UeBJsk8G4RI/AAAAAAAAALo/e5MzssQSLL0/w1200-h630-p-k-no-nu/Robert_Gray_cover_portrait_1.jpg-->
 												<img class="lcol" src="http://1.bp.blogspot.com/-amxY70ojGhI/UeBJsk8G4RI/AAAAAAAAALo/e5MzssQSLL0/w1200-h630-p-k-no-nu/Robert_Gray_cover_portrait_1.jpg" alt="Robert Gray photo" />
 											</div>
+                                            </div>
 											<!--REVIEW 1--> 
 											<div class="reviews">    
 												<h3>REVIEWS</h3>
@@ -218,10 +220,10 @@ There is no other wisdom to attain.’ (p54)</pre>
 														<li>
 															<h3 > Contact</h3>
 														</li>
-														<li> PO Box 445, St Kilda, VIC 3182</li>
-														<li> 0425 784 482</li>
-														<li> johnleonardpress@gmail.com </li>
-														<li> Copyright 2013</li>
+														<li> PO Box 000, St Kilda, VIC 3182</li>
+                                                        <li> 0400000000</li>
+								                        <li> alza@gmail.com </li>
+                                                        <li> Copyright 2018</li>
 													</ul>
 												</td>
 											</tr>

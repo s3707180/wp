@@ -48,6 +48,7 @@
 
 
 								<div class="lcol"> 
+                                     <!-- Original image below of the coverpage of recurrence book cover the original photo can be fond at http://t0.gstatic.com/images?q=tbn:ANd9GcTE9B3Mjd1dvKKsuqyRm_ewABKWSDatFxASwdbsQpVeLaXjpflt  -->
 									<img src="images/RecurrenceBookCover_1.jpg" alt="Recurrence book cover" />  
 
 									<ul>    
@@ -101,7 +102,8 @@
 																	<th colspan=2 >
 																		<button type="submit" style="width:90%" >Add</button>
 																	</th>
-																	<img class="lcol" src=http://www.utas.edu.au/__data/assets/image/0004/724981/varieties/profile_image.jpg height="170px" width="250px" alt="Graem Miles photo" />
+                                                                     <!-- Original image below is the profile picture of the writer Graeme Miles the original photo can be fond at http://www.utas.edu.au/__data/assets/image/0004/724981/varieties/profile_image.jpg-->  
+																	<img class="lcol" src=http://www.utas.edu.au/__data/assets/image/0004/724981/varieties/profile_image.jpg height="200px" width="250px" alt="Graem Miles photo" />
 																</tr>
 															</table>
 
@@ -117,7 +119,7 @@
 														<p>Graeme Miles was born in Perth in 1976. His first collection of poems, Phosphorescence (Fremantle Press, 2006), was shortlisted for the WA Premier's Prize. After a Ph.D. in Classics at the University of WA, he was an Asialink author in home at the University of Madras, at that point an exploration individual at the University of Ghent, Belgium. He currently lives in Hobart and addresses in Classics at the University of Tasmania.</p>
 														<hr/>
 													</div>
-
+                                                 </div>
 
 												</div>    
 												<!--REVIEW 1--> 
@@ -202,11 +204,7 @@
 															<ul>
 																<li>
 																	<h3 > Contact</h3>
-																</li>
-																<li> PO Box 445, St Kilda, VIC 3182</li>
-																<li> 0425 784 482</li>
-																<li> johnleonardpress@gmail.com </li>
-																<li> Copyright 2013</li>
+																re
 															</ul>
 														</td>
 													</tr>

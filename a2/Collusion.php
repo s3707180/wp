@@ -46,6 +46,7 @@
 								</div>
 
 								<div class="lcol"> 
+                                    <!-- Original image below of the coverpage of COLLUSION book cover the original photo can be fond at https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjI0IKOu6bdAhUWAogKHYKCBTcQjRx6BAgBEAU&url=http%3A%2F%2Fjohnleonardpress.com%2F%3Fp%3D188&psig=AOvVaw01cpFg-OjcUBa6YfDYtMDm&ust=1536326158122655 -->
 									<img src="images/collusionBookCoverC_1.jpg" alt="Collusion book cover" /> 
 									<ul>    
 										<li>ISBN: 978-0-9808523-6-3</li>
@@ -101,7 +102,8 @@
 
 													</div>
 												</form>
-												<img class="lcol" src="https://www.poetryarchive.org/sites/default/files/styles/220x170-live-recordings-block/public/poet_photos/emeryl.jpg?itok=grqPq-qG" alt="Brook Emery photo"  height="140px" width="250px" />
+                                                 <!-- Original image below is the profile of Brook Emery and the original can be found at  https://www.poetryarchive.org/sites/default/files/styles/220x170-live-recordings-block/public/poet_photos/emeryl.jpg?itok=grqPq-qG" alt="Brook Emery photo -->
+												<img class="lcol" src="https://www.poetryarchive.org/sites/default/files/styles/220x170-live-recordings-block/public/poet_photos/emeryl.jpg?itok=grqPq-qG" alt="Brook Emery photo"  height="170px" width="250px" />
 											</div>
 
 											<!--ABOUT AUTHOR-->
@@ -111,10 +113,15 @@
 
 
 													<p>Brook Emery lives near the surf in Sydney, where he was born in 1949. He has published three books of poetry, and dug my fingers in the sand  (FIP, 2000), which won the Judith Wright Calanthe Prize in the Queensland Premier’s Awards, Misplaced Heart (FIP, 2003) and Uncommon Light (FIP, 2007). All three were short-listed for the Kenneth Slessor Prize in the NSW Premier’s Awards. A former teacher, he directed the Australian Poetry Festival in 2008 and 2010 and was until recently Chairperson of the Poets Union.</p>
+                                                    <p>The ballads attract regard for genuine idea, even in so energetic a lyric as 'Thirty-six Views of Bondi Beach'. Craftsmanship is likewise clear in Emery's experimentation with meter and stanzaic and different structures. He has composed many expositions on poetics, and utilizations specialized impacts and dialect to advantage in sonnets regarding with interiority and also experimental subjects. Such lyrics move point of view from inside to outside, with familiarity that matches an ascertaining mind. 
+
+                                                    Emery utilizes space as a urgent component; on occasion, long queues are pressed into shut that contain thick coaxed out idea. In this, he may be said to have some proclivity with the Australian writer R.D. FitzGerald, another essayist on maritime topics. Somewhere else, Emery's manners of thinking are imaged in lines that are isolated more than more often than not. 
+
+                                                    In these accounts Emery's perusing is loose and alarm, as he give each word its measure. Setting off with easy breath control, he slips effortlessly into long loping beat, swimming through the sonnets with rich vocal economy. The lyrics in Selected Reading from Uncommon Light were recorded via Carol Jenkins in May 2007 for River Road Press. The sonnets 'Physical' and 'The psyche is a body breathing' were recorded in May 2009 via Carol Jenkins particularly for The Poetry Archive.</p>
 													<hr/>
 												</div>
 
-
+                                             </div>
 											</div>
 											<!--REVIEW 1-->
 											<div class="reviews"> 
@@ -304,10 +311,10 @@ the speeding train. I reach for them. They reach for me.</pre>
 														<li>
 															<h3 > Contact</h3>
 														</li>
-														<li> PO Box 445, St Kilda, VIC 3182</li>
-														<li> 0425 784 482</li>
-														<li> johnleonardpress@gmail.com </li>
-														<li> Copyright 2013</li>
+                                                        <li> PO Box 000, St Kilda, VIC 3182</li>
+                                                        <li> 0400000000</li>
+                                                        <li> alza@gmail.com </li>
+                                                        <li> Copyright 2018</li>
 													</ul>
 												</td>
 											</tr>

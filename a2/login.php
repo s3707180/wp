@@ -36,14 +36,14 @@
 									<label for="email">
 										<b>Username</b>
 									</label>
-									<input type="email" placeholder="Enter Username" name="email" style="width:50%; height:12%" required>
+									<input type="email" placeholder=" 👤 Enter Username" name="email" style="width:50%; height:12%" required>
 										<br>
 
 											<br>
 												<label for="password">
 													<b>Password</b>
 												</label>
-												<input type="password" placeholder="Enter Password" name="password" style="width:50%; height:12%" required>
+												<input type="password" placeholder=" 🔑 Enter Password" name="password" style="width:50%; height:12%" required>
 													<br>
 														<br>
 
@@ -77,10 +77,10 @@
 																					<li>
 																						<h3 > Contact</h3>
 																					</li>
-																					<li> PO Box 445, St Kilda, VIC 3182</li>
-																					<li> 0425 784 482</li>
-																					<li> johnleonardpress@gmail.com </li>
-																					<li> Copyright 2013</li>
+																                    <li> PO Box 000, St Kilda, VIC 3182</li>
+																                    <li> 0400000000</li>
+																                    <li> alza@gmail.com </li>
+																                    <li> Copyright 2018</li>
 																				</ul>
 																			</td>
 																		</tr>

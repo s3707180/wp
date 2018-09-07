@@ -49,9 +49,9 @@
 							<p>To order wholesale, please order by email, phone or fax from our distributor Inbooks:</p>
 
 							<ul>
-								<li>Email: orders@inbooks.com.au</li>
-								<li>Phone (02) 9986 7082</li>
-								<li>Fax (02) 9986 7090</li>
+								<li>Email: alza@inbooks.com.au</li>
+								<li>Phone (02) 99000000</li>
+								<li>Fax (02) 99860000</li>
 							</ul>
 						</div>
 					</div>
@@ -68,10 +68,10 @@
 											<li>
 												<h3 > Contact</h3>
 											</li>
-											<li> PO Box 445, St Kilda, VIC 3182</li>
-											<li> 0425 784 482</li>
-											<li> johnleonardpress@gmail.com </li>
-											<li> Copyright 2013</li>
+											<li> PO Box 000, St Kilda, VIC 3182</li>
+                                            <li> 0400000000</li>
+								            <li> alza@gmail.com </li>
+								            <li> Copyright 2018</li>
 										</ul>
 									</td>
 								</tr>
