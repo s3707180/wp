@@ -19,6 +19,19 @@
 	border-radius: 10px;
 }
 
+@font-face {
+    font-family: Merienda;
+    src: url('Merienda-Regular.ttf');
+	font-style: normal;
+	font-weight: normal;
+}
+@font-face {
+    font-family: Merienda;
+    src: url('Merienda-Bold.ttf');
+	font-style: normal;
+	font-weight: bold;
+}
+
 .Header {
 	width:980px;
 	position: relative;
@@ -133,7 +146,7 @@ body {
 }
 
 h1 {
-	font-family: 'Tw Cen MT Condensed Extra Bold', 'Gill Sans Ultra Bold Condensed', Impact, sans-serif;
+	font-family: 'Merienda';
 	font-weight: normal;
 	color: #333;
 	text-align: center;
@@ -144,7 +157,7 @@ h1 {
 }
 
 h2 {
-	font-family: 'Tw Cen MT Condensed', 'Gill Sans Condensed', 'Arial Narrow', Calibri, sans-serif;
+	font-family: 'Merienda';
 	color: black;
 	font-weight: normal;
 	border-bottom: 1px solid #bbb;
@@ -157,7 +170,7 @@ h2 {
 }
 
 h3 {
-	font-family: 'Tw Cen MT Condensed', 'Gill Sans Condensed', 'Arial Narrow', Calibri, sans-serif;
+	font-family: 'Merienda';
 	font-weight: normal;
 	font-size: 1.7em;
 	margin: 15px 20px 15px 0px;
@@ -194,12 +207,12 @@ pre {
 }
 
 .reviews h4{
-	font-family: 'Tw Cen MT Condensed', 'Gill Sans Condensed', 'Arial Narrow', Calibri, sans-serif;
+	font-family: 'Merienda';
 	text-align: left;
 }
 
 h5 {
-	font-family: 'Tw Cen MT Condensed', 'Gill Sans Condensed', 'Arial Narrow', Calibri, sans-serif;
+	font-family: 'Merienda';
 	font-weight: normal;
 	text-align: left;
 	font-size: 1.7em;
@@ -233,19 +246,13 @@ clear:both;
 }
 p {
 	text-align: left;
-	font-family: 'Kotta One', 'Tw Cen MT Condensed', 'Gill Sans Condensed', 'Arial Narrow', Calibri, sans-serif;
+	font-family: 'Merienda';
 }
 
 li {
 	text-align: left;
-	font-family: 'Kotta One', 'Tw Cen MT Condensed', 'Gill Sans Condensed', 'Arial Narrow', Calibri, sans-serif;
+	font-family: 'Merienda';
 	font-size:14px;
-}
-@font-face {
-  font-family: 'Kotta One';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Kotta One'), local('KottaOne-Regular'), url(http://themes.googleusercontent.com/static/fonts/kottaone/v1/T11KR5KX3fgZhBmu7MWXKj8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
 }
 
 section {
