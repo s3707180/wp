@@ -204,7 +204,11 @@
 															<ul>
 																<li>
 																	<h3 > Contact</h3>
-																re
+																</li>
+																<li> PO Box 445, St Kilda, VIC 3182</li>
+																<li>  0400000000</li>
+																<li> johnleonardpress@gmail.com </li>
+																<li> Copyright 2013</li>
 															</ul>
 														</td>
 													</tr>
