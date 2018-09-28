@@ -1,33 +1,11 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-			<title>John Leonard Press : Braiding the Voices</title>
-			<link href="css/style.css" rel="stylesheet" type="text/css" />
-			<script src='alza.js'> </script>
-
-		</head>
+	<?php include 'head.php' ;
+	head_module('Product: Braiding the Voices');	?>
+	
 
 		<body>
-			<div class="logo">
-				<a href="index.php">
-					<img src="images/logo.jpg" height="191px" width="300px" >
-					</a>
-				</div>
-
-				<div class="Header">
-					<header style="background:#484848 ;">
-						<nav class="PrimaryNavigation">
-							<form method="get" action="/search" id="search1">
-								<a href="index.php">Home</a> 
-								<a href="products.php">Products</a>
-								<a href="login.php">Log-in</a>
-								<a href="aboutus.php">About Us</a>
-								<input id="search" type="text" placeholder="search"/>
-							</form>
-						</nav>
-					</header>  
-				</div>
+			<?php include 'header.php'?>
 
 				<div class="mainContainer">
 					<div class="fullLightGreyBox">
@@ -153,27 +131,6 @@
 									</section>
 								</div>
 							</div>
-							<div class="footer">
-								<footer style="background: #fffffF;">
-									<table align="center">
-										<tr>
-											<td>
-												<img src="images/logo.jpg" height="191px" width="300px" >
-												</td>
-												<td>
-													<ul>
-														<li>
-															<h3 > Contact</h3>
-														</li>
-														<li> PO Box 000, St Kilda, VIC 3182</li>
-                                                        <li> 0400000000</li>
-                                                        <li> alza@gmail.com </li>
-                                                        <li> Copyright 2018</li>
-													</ul>
-												</td>
-											</tr>
-										</table>
-									</footer> 
-								</div>
+							<?php include 'footer.php'?>
 							</body>
 						</html>
