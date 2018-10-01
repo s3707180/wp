@@ -1,1 +1,5 @@
-Name	Email	Phone	Address
+Book Name	Book price	Book author	image
+Recurrence	24.95	Graeme Miles	RecurrenceBookCover_1.jpg
+CUMULUS	32.95	Robert Gray	cumulusimage_1.jpg
+COLLUSION	24.95	Brook Emery	collusionBookCoverC_1.jpg
+Braiding the Voices	32.95	Peter Steele	Braidingthe_voicescoverFINAL_2.jpg

@@ -1,3 +1,33 @@
+<?php $productsFile = fopen("products.txt", "r") or die("Unable to open file!");
+		$productsStr = fread($productsFile, filesize("products.txt"));
+		fclose($productsFile);
+		//echo $productsStr;
+		$productsLineArr=explode("\n",$productsStr);
+		# echo nl2br(print_r( $productsLineArr,true));
+		$index=-1;
+		#$products_array;
+		foreach($productsLineArr as $line)
+		{
+		if ($index == -1) {
+			$index++;
+			continue;
+		} 
+		$tmpArr = explode("\t", $line);
+		$products_array[$index]['name'] = $tmpArr[0];
+		$products_array[$index]['price'] = $tmpArr[1];
+		$products_array[$index]['author'] = $tmpArr[2];
+		$products_array[$index]['image'] = $tmpArr[3];
+
+		$index++;
+		}
+
+		
+ ?>
+ 
+ <?php print_r ($products_array); 
+	echo "------------ ".$products_array[0]['name'];
+ ?>
+
 <!DOCTYPE HTML>
 <html>
 	<?php include 'head.php' ;
@@ -14,61 +44,24 @@
 						<!--THE BOOKS-->
 						<h2>Recently Published</h2>
 
-						<div class="bookInfo">
+						<?php 
+						foreach($products_array as $product) {
+							echo '<div class="bookInfo">';
 
-							<a href="Recurrence.php">
-								<h4>Graeme Miles: Recurrence</h4>
-                                 <!-- Original image below of the coverpage of Cumulus book cover the original photo can be fond at https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiuoPPcuqbdAhVOA4gKHfBbA7AQjRx6BAgBEAU&url=https%3A%2F%2Fsydneyreviewofbooks.com%2Fprecarious-images%2F&psig=AOvVaw3kcFMHyFWmuBQdWvekHQBE&ust=1536326064487646 -->
-								<img src="images/RecurrenceBookCover_1.jpg" height="300px" width="200"  alt="Recurrence book cover" />
-							</a> 
-							<ul>    
-								<li>ISBN: 978-0-9808523-7-0</li>
-								<li>61pp. pbk</li>
-								<li>RRP: $24.95</li>
-
-							</ul>
-						</div>
-
-						<div class="bookInfo">
-							<a href="Cumulus.php">
-								<h4>Robert Gray: CUMULUS</h4>
-                                   <!-- Original image below of the coverpage of Cumulus book cover the original photo can be fond at https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjI0IKOu6bdAhUWAogKHYKCBTcQjRx6BAgBEAU&url=http%3A%2F%2Fjohnleonardpress.com%2F%3Fp%3D188&psig=AOvVaw01cpFg-OjcUBa6YfDYtMDm&ust=1536326158122655 -->
-								<img src="images//cumulusimage_1.jpg" height="300px" width="200" alt="Cumulus book cover" />
-							</a>
-							<ul>    
-								<li>ISBN: 978-0-9808523-5-6</li>
-								<li>345pp. pbk</li>
-								<li>RRP: $32.95</li>
-							</ul>
-						</div>
-
-						<div class="bookInfo">
-							<a href="Collusion.php">
-								<h4>Brook Emery: COLLUSION</h4>
-                                   <!-- Original image below of the coverpage of Collusion book cover the original photo can be fond at https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwjI0IKOu6bdAhUWAogKHYKCBTcQjRx6BAgBEAU&url=http%3A%2F%2Fjohnleonardpress.com%2F%3Fp%3D188&psig=AOvVaw01cpFg-OjcUBa6YfDYtMDm&ust=1536326158122655 -->
-								<img src="images/collusionBookCoverC_1.jpg" height="300px" width="200" alt="Collusion book cover" />
-							</a>
-							<ul>    
-								<li>ISBN: 978-0-9808523-6-3</li>
-								<li>70pp. pbk</li>
-								<li>RRP: $24.95</li>
-
-							</ul>
-						</div>
-
-						<div class="bookInfo">
-							<a href="BraidingtheVoices.php">
-								<h4>Peter Steele: Braiding the Voices</h4>
-                                    <!-- Original image below of the coverpage of Braiding the Voices cover the original photo can be fond at https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiy0Pmtu6bdAhVNPHAKHbAmAQ4QjRx6BAgBEAU&url=http%3A%2F%2Fjohnleonardpress.com%2F%3Fp%3D190&psig=AOvVaw3cp6nbKcNISJLtafY_ynHy&ust=1536326232904039-->
-								<img src="images/Braidingthe_voicescoverFINAL_2.jpg" height="300px" width="200"  alt="Braiding the Voices book cover" />
-							</a>
-							<ul>    
-								<li>ISBN: 978-0-9808523-4-9</li>
-								<li>310pp. pbk</li>
-								<li>RRP: $32.95</li>
-
-							</ul>
-						</div>
+							echo '<a href="Recurrence.php">';
+							
+							echo "<h4>{$product['author']}: {$product['name']} </h4>";
+							echo "<img src=\"images/{$product['image']}\"".' height="300px" width="200"  alt="book cover" />';
+							echo '</a>';
+							echo '<ul>';
+						//	echo '	<li>ISBN: 978-0-9808523-7-0</li>';
+						//	echo '	<li>61pp. pbk</li>';
+							echo "	<li>RRP: \${$product['price']}</li>";
+							echo '</ul>';
+							echo '</div>';
+						}
+						?>
+						
 						<div class="clear"/>
 
 						<hr/>
