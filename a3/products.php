@@ -5,7 +5,7 @@
 		$productsLineArr=explode("\n",$productsStr);
 		# echo nl2br(print_r( $productsLineArr,true));
 		$index=-1;
-		#$products_array;
+		
 		foreach($productsLineArr as $line)
 		{
 		if ($index == -1) {
@@ -13,15 +13,19 @@
 			continue;
 		} 
 		$tmpArr = explode("\t", $line);
-		$products_array[$index]['name'] = $tmpArr[0];
-		$products_array[$index]['price'] = $tmpArr[1];
-		$products_array[$index]['author'] = $tmpArr[2];
-		$products_array[$index]['image'] = $tmpArr[3];
+		$products_array[$index]['ID'] = $tmpArr[0];
+		$products_array[$index]['name'] = $tmpArr[1];
+		$products_array[$index]['price'] = $tmpArr[2];
+		$products_array[$index]['author'] = $tmpArr[3];
+		$products_array[$index]['image'] = $tmpArr[4];
+		$products_array[$index]['about'] = $tmpArr[5];
 
 		$index++;
 		}
 
-		
+		if (isset($_GET['id'])){
+			$id = $_GET['id'];
+		}
  ?>
  
  <?php print_r ($products_array); 
@@ -48,7 +52,7 @@
 						foreach($products_array as $product) {
 							echo '<div class="bookInfo">';
 
-							echo '<a href="Recurrence.php">';
+							echo "<a href=\"Recurrence.php?id={$product['ID']}\">";
 							
 							echo "<h4>{$product['author']}: {$product['name']} </h4>";
 							echo "<img src=\"images/{$product['image']}\"".' height="300px" width="200"  alt="book cover" />';
