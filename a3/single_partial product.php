@@ -16,7 +16,7 @@
 							<ul>    
 
 							</ul>
-							<form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=product" method="post" onsubmit='return formValidate();'>
+							<form action="cart.php" method="post" onsubmit='return formValidate();'>
 								<div class="product_form">
 									<input type="hidden" id="id" name="id" value="<?php echo $products_array[$id]['ID'] ?> ">
 										<table style="width:100%">
