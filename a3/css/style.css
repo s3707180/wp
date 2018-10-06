@@ -140,6 +140,7 @@
     box-shadow: inset 1px 4px 9px -6px;
     padding: 10px;
     background-image: url("images/logo.png");
+    overflow: auto;
 
 }
 
@@ -172,8 +173,8 @@ body {
 }
 
 .con {
-    height: 300px;
-    width: 300px;
+    height: 1000px;
+    width: 624px;
     border: 25px solid #484848;
     padding: 25px;
 
@@ -340,10 +341,14 @@ section > div {
     height: 600px;
     border-bottom: 1px solid #faaeae;
     padding: 25px 35px;
-    color: #FF0000;
+    color: FF0000;
     font-size: 20px;
     font-weight: 900;
-    font-family: Helvetica;
+     font-family: Merienda;
+    src: url('Merienda-Regular.ttf');
+    font-style: normal;
+    font-weight: normal;
+   
 }
 
 .button {
@@ -407,8 +412,9 @@ section > div {
 }
 .locl {
     Width: 100
-    float:relative;
+    float:center;
     margin: 0px 0px 0px 0px;
+    
 }
 
 .loclg {

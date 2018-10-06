@@ -36,49 +36,34 @@ session_start();
         <div class="col-75">
             <div class="mainContainer">
                 <div class="fullLightGreyBox">
+				<form method="post" action="Receipt.php">
                     <a href="products.php"><button class="button"><span> 🛒 Back Shopping </span></button></a>
-                    <a href="products.php"><button class="button"><span>❌Clear Cart</span></button></a>
-                    <a href="checkout.php"><button class="button"><span>💰Submit </span></button></a>
+                    <button class="button" ><span>💰Submit </span></button>
                     <!-- Title -->
                     <div class="hed">
 
                         <h2>Checkout</h2>
                         <h3>Your details</h3>
-
-                        <p> <label for="name"><i class="name"></i> Full Name</label>
-                            <input type="text" id="name" name="name" placeholder="Mark Smith"><br>
-                            <label for="email"><i class="eamil"></i> Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                            <input type="text" id="email" name="email" placeholder="mark@gmail.com"><br>
-                            <label for="address"><i class="address"></i> Address&nbsp;&nbsp;&nbsp;</label>
-                            <input type="text" id="address" name="address" placeholder="24 Mcivor street"><br>
-                            <label for="city"><i class="city"></i> City&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                            <input type="text" id="city" name="city" placeholder="Victoria"><br>
-                            <label for="state">State&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                            <input type="text" id="state" name="state" placeholder="VIC"><br>
-                            <label for="Postcode">PostCode</label>
-                            <input type="text" id="Postcode" name="Postcode" placeholder="3047"><br></p>
+						
+                    <table>
+						<tr><td> <label for="name"><i class="name"> Full Name&nbsp;&nbsp;</i></label></td>
+                            <td><input type="text" id="name" name="name" placeholder="Mark Smith"   style="width:200%; height:20px"></td></tr>
+                         <tr><td>   <label for="email"><i class="eamil"></i> Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></td>
+                             <td> <input type="text" id="email" name="email" placeholder="mark@gmail.com" style="width:200%; height:20px"></td></tr>
+                           <tr><td> <label for="address"><i class="address"></i> Address&nbsp;&nbsp;&nbsp;</label></td>
+                           <td> <input type="text" id="address" name="address" placeholder="24 Mcivor street" style="width:200%; height:20px"></td></tr>
+                           <tr><td> <label for="city"><i class="city"></i> City&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></td>
+                          <td>  <input type="text" id="city" name="city" placeholder="Melburne" style="width:200%; height:20px"></td></tr>
+                        <tr><td>    <label for="state">State&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></td>
+                           <td> <input type="text" id="state" name="state" placeholder="VIC" style="width:60%; height:20px"></td></tr>
+                          <tr><td>  <label for="Postcode">PostCode</label></td>
+                           <td> <input type="text" id="Postcode" name="Postcode" placeholder="3047" style="width:60%; height:20px"></td></tr>
+					</table>
+					</form>
                     </div>
-                  
-                    <a href="Receiptbutton class="button"><span>💰Submit </span></button></a>
-                    <div class="footer">
-
-                        <table align="center">
-                            <tr>
-                                <td>
-                                    <img src="images/logo.jpg" height="191px" width="300px">
-                                </td>
-                                <td>
-                                    <ul>
-                                        <li>
-                                            <h3> Contact</h3>
-                                        </li>
-                                        <li> PO Box 000, St Kilda, VIC 3182</li>
-                                        <li> 0400000000</li>
-                                        <li> alza@gmail.com </li>
-                                        <li> Copyright 2018</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </table>
-
-                    </div>
+					
+                    <?php include 'footer.php'?>
+					
+				</body>
+			</html>
+			
