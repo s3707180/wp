@@ -36,7 +36,7 @@ session_start();
         <div class="col-75">
             <div class="mainContainer">
                 <div class="fullLightGreyBox">
-				<form method="post" action="Receipt.php">
+				<form method="POST" action="Receipt.php">
                     <a href="products.php"><button class="button"><span> 🛒 Back Shopping </span></button></a>
                     <button class="button" ><span>💰Submit </span></button>
                     <!-- Title -->

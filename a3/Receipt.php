@@ -2,6 +2,8 @@
 <html>
 
 	<?php
+
+		
 	session_start();
 
 	include 'head.php' ;
@@ -20,9 +22,8 @@
 	else if (isset($_GET['clearAll']) && $_GET['clearAll']=='true') {
 		unset($_SESSION['cart_arr']);
 	}
-	//print_r($products_array);
 	
-	//print_r($_SESSION);
+	
 ?>
 
 
@@ -34,8 +35,12 @@
 
 
 
-						<p> name: Liza <br>
-						Adress: 23xxx <br>
+						<p> name: <?php  echo isset ($_POST['name'])? $_POST['name']:"" ?><br>
+						Address:<?php 
+						echo isset ($_POST['address'])? $_POST['address']:""."    "; 
+						echo isset ($_POST['city'])? $_POST['city']:""."    ";
+						echo isset ($_POST['state'])? $_POST['state']:""."    ";
+						echo isset ($_POST['Postcode'])? $_POST['Postcode']:"" ?>  <br>
 						products details:  <br>
 										<?php 
        if( isset($_SESSION['cart_arr']))

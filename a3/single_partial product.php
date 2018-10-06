@@ -25,11 +25,21 @@
 													<label>Price:</label>
 												</th>
 												<th>
-													<label>$<?php echo $products_array[$id]['price'] ?>
+													$<label id="price" name="price"><?php echo $products_array[$id]['price'] ?>
 													</label>
-												</th> 
+													</th>
+													</tr>
+													<tr>
+												<th>
+													<label>Subtotal</label> 
+												</th>
+                                             <th>
+                                                    <label id="subtotal" name="subtotal"> 0</label>
+                                                   </th>												
 											</tr>
+											
 											<tr>
+											
 												<th>
 													<label>Option</label>
 												</th>
@@ -48,7 +58,7 @@
 												</th>
 												<th>
 													<input type="button" value="-" onclick="minus();">
-														<input type="text" id="qty" name="qty" size="3">
+														<input type="text" id="qty" name="qty" size="3" onchange="subtotalCalcul();">
 															<input type="button" value="+" onclick="plus();">
 															</th> 
 
