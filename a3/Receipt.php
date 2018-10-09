@@ -1,11 +1,13 @@
+	<?php		
+	session_start();
+	include 'tools.php';
+	checkoutValidation();	
+	?>
+
 <!DOCTYPE HTML>
 <html>
 
-	<?php
-
-		
-	session_start();
-
+<?php
 	include 'head.php' ;
 	head_module('Receipt');	?>
 
@@ -13,7 +15,7 @@
 	<body>
 		<?php include 'header.php'?>
 		<?php
-	include 'tools.php';
+
 	$products_array = getProductsArr();
 
 	if (isset($_POST["id"])) {

@@ -15,9 +15,7 @@
 	else if (isset($_GET['clearAll']) && $_GET['clearAll']=='true') {
 		unset($_SESSION['cart_arr']);
 	}
-	//print_r($products_array);
 	
-	print_r($_SESSION);
 ?>
 
 	<body>

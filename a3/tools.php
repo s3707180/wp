@@ -26,4 +26,61 @@ $productsFile = fopen("products.txt", "r") or die("Unable to open file!");
 		}
 		return $products_array;
 	}
+	
+function checkoutValidation() {
+			$isError = false;
+			$ErrorMsg = "";
+			if (!isset($_POST["name"]) || !preg_match("/^[a-zA-Z ,'-\.]+$/",$_POST["name"])) {
+				echo "Error name";
+				$isError = true;
+				$ErrorMsg = "Please enter name using only Alphabetic characters and space, full stop, comma, single quote and hyphen. ";
+			}
+			if (!isset($_POST["email"]) || !filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
+				Echo "Error Email";
+				$isError = true;
+				$ErrorMsg = $ErrorMsg." <br> Please enter a valid email address. ";				
+			}				
+			if (!isset($_POST["address"]) || !preg_match("#^[a-zA-Z0-9 ,'-\./]+$#",$_POST["address"])) {
+				Echo "Error Address";
+				$isError = true;
+				$ErrorMsg = $ErrorMsg." <br> please enter Address using only Alphanumeric characters and space, full stop, comma, single quote and hyphen. ";
+			}
+			if (!isset($_POST["mobile"]) || !preg_match("/^(\+614|04|\(04\))[0-9]{8}$/",$_POST["mobile"])) {
+				Echo "Error Mobile";
+				$isError = true;
+				$ErrorMsg = $ErrorMsg." <br> please enter Address using only Alphanumeric characters and space, full stop, comma, single quote and hyphen. ";
+			}
+			if (!isset($_POST["credit"]) || !preg_match("/^[0-9 ]{12,19}$/",$_POST["credit"])) {
+				Echo "Error Credit";
+				$isError = true;
+				$ErrorMsg = $ErrorMsg." <br> please enter Address using only Alphanumeric characters and space, full stop, comma, single quote and hyphen. ";
+			}
+
+			if (!isset($_POST["date"])) {
+				Echo "Error date";
+				$isError = true;
+				$ErrorMsg = $ErrorMsg." <br> please enter Address using only Alphanumeric characters and space, full stop, comma, single quote and hyphen. ";
+			} 
+			else {
+			//Echo "<BR>".$_POST["date"];
+			$date = date_create($_POST["date"]);
+			$dateNow = date_create('now');
+			$dateNow->setTime(0, 0);
+			//echo "<BR>".$date->format('Y-m-d H:i:s');
+			//echo "<BR>".$dateNow->format('Y-m-d H:i:s');
+			$diff=date_diff($dateNow,$date);
+			//echo "<BR>".$diff->format("%R%a");
+			if ($diff->format("%R%a") < 28) {
+				Echo "Error date";
+				$isError = true;
+				$ErrorMsg = $ErrorMsg." <br> please enter Address using only Alphanumeric characters and space, full stop, comma, single quote and hyphen. ";
+
+			}
+			}
+	
+	if ($isError) {
+		header('Location: checkout.php');
+		exit;
+	}
+}
 ?>
