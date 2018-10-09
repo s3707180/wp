@@ -1,4 +1,33 @@
 <?php 
+function saveOrder() {
+	$ordersFile = fopen("orders.txt", "a") or die("Unable to open file!");
+	$dateNow = date_create('now');
+	
+	$products_array = getProductsArr();
+	
+	$orderId = getLastOrderId()+1;
+	if(isset($_SESSION['cart_arr']))
+	foreach ($_SESSION['cart_arr'] as $cartItem)  {
+		fwrite($ordersFile,"\n".$dateNow->format('Y-m-d H:i:s')."\t".$_POST["name"]."\t".$_POST["email"]."\t".$_POST["mobile"]."\t".
+		$_POST["address"]."\t".$cartItem['id']."\t".$orderId."\t".$cartItem['qty']."\t".$products_array[(int)$cartItem['id']]['price']."\t".
+		$products_array[(int)$cartItem['id']]['price']*$cartItem['qty']);
+	}
+	fclose($ordersFile);
+}
+
+function getLastOrderId() {
+	$ordersFile = fopen("orders.txt", "r") or die("Unable to open file!");
+		$ordersStr = fread($ordersFile, filesize("orders.txt"));
+		fclose($ordersFile);
+
+		$ordersLineArr=explode("\n",$ordersStr);
+		$line= $ordersLineArr[sizeof($ordersLineArr)-1];
+		
+		$tmpArr = explode("\t", $line);
+		$lastOrderId = $tmpArr[6];
+		return $lastOrderId;
+}
+
 function getProductsArr() {
 $productsFile = fopen("products.txt", "r") or die("Unable to open file!");
 		$productsStr = fread($productsFile, filesize("products.txt"));

@@ -2,6 +2,7 @@
 	session_start();
 	include 'tools.php';
 	checkoutValidation();	
+	saveOrder();
 	?>
 
 <!DOCTYPE HTML>
@@ -15,7 +16,6 @@
 	<body>
 		<?php include 'header.php'?>
 		<?php
-
 	$products_array = getProductsArr();
 
 	if (isset($_POST["id"])) {
@@ -64,17 +64,14 @@
 										</div>
 									</div> 
 								</div>
-							</form>
 
 							<hr />
-
-
-							<div class="clear"/>
-
-						</div>
 					</div>
 
-					<?php include 'footer.php'?>
+					<?php 
+					//clear the cart after the receipt is displayed
+					unset($_SESSION['cart_arr']);
+					include 'footer.php'?>
 
 				</body>
 			</html>
