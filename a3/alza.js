@@ -32,3 +32,16 @@ function subtotalCalcul(){
 	
 	 document.getElementById("subtotal").innerHTML =qty*price;
 }
+function date(){
+	
+    var local = new Date(this);
+    local.setMinutes(this.getMinutes() - this.getTimezoneOffset());
+    return local.toJSON().slice(0,10);
+}
+$("#only-text").on('keyup', function(e) {
+    var val = $(this).val();
+   if (val.match(/[^a-zA-Z]/g)) {
+       $(this).val(val.replace(/[^a-zA-Z]/g, ''));
+   }
+});
+}

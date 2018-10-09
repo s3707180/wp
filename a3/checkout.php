@@ -47,17 +47,22 @@ session_start();
 						
                     <table>
 						<tr><td> <label for="name"><i class="name"> Full Name&nbsp;&nbsp;</i></label></td>
-                            <td><input type="text" id="name" name="name" placeholder="Mark Smith"   style="width:200%; height:20px"></td></tr>
-                         <tr><td>   <label for="email"><i class="eamil"></i> Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></td>
-                             <td> <input type="text" id="email" name="email" placeholder="mark@gmail.com" style="width:200%; height:20px"></td></tr>
-                           <tr><td> <label for="address"><i class="address"></i> Address&nbsp;&nbsp;&nbsp;</label></td>
-                           <td> <input type="text" id="address" name="address" placeholder="24 Mcivor street" style="width:200%; height:20px"></td></tr>
-                           <tr><td> <label for="city"><i class="city"></i> City&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></td>
-                          <td>  <input type="text" id="city" name="city" placeholder="Melburne" style="width:200%; height:20px"></td></tr>
-                        <tr><td>    <label for="state">State&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></td>
-                           <td> <input type="text" id="state" name="state" placeholder="VIC" style="width:60%; height:20px"></td></tr>
-                          <tr><td>  <label for="Postcode">PostCode</label></td>
-                           <td> <input type="text" id="Postcode" name="Postcode" placeholder="3047" style="width:60%; height:20px"></td></tr>
+                            <td><input type="text" pattern="[a-zA-Z0-9 ,'-\.]+" id="name" name="name"  placeholder="Mark Smith"   style="width:100%; height:20px"  required></td></tr>
+                         <tr><td><label for="email"><i class="eamil"></i> Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></td>
+                             <td><input type="text" id="email" name="email" placeholder="mark@gmail.com" style="width:100%; height:20px"required></td></tr>
+
+
+							 <tr><td> <label for="address"><i class="address"></i> Address&nbsp;&nbsp;&nbsp;</label></td>
+                          <td> <textarea rows="5" cols="50" id="address" name="address" placeholder="24 Mcivor street"` required></textarea> </td></tr>
+
+
+                           <tr><td> <label for="mobile"><i class="mobile"></i> Mobile Phone&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></td>
+                          <td>  <input type="text" id="mobile" name="mobile" placeholder="+614..." style="width:100%; height:20px" required></td></tr>
+                        <tr><td>    <label for="credit">Credit card&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></td>
+                           <td> <input type="text" id="credit" name="credit" placeholder="Credit card number" style="width:100%; height:20px" required></td></tr>
+                          <tr><td>  <label for="date">Expiry Date</label></td>
+                           <td><input type="date" id="date" name="date" value="<?php echo date('Y-m-d'); ?>" placeholder="MM/YYYY" style="width:100%; height:20px" required></td></tr>
+					
 					</table>
 					</form>
                     </div>

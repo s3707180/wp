@@ -40,17 +40,17 @@
                 Shopping Cart
 					<table>
 						<?php 
-					//print_r($products_array[2]);
+					$total=0;
 					if( isset($_SESSION['cart_arr']))
 					foreach ($_SESSION['cart_arr'] as $cartItem)  {?>
 						<tr>
 							<td>
 								<img src="images/<?php echo $products_array[(int)$cartItem['id']]['image']?>" alt="Collusion book cover" style="width:100px" />
 							</td>
-							<td>&nbsp;&nbsp;&nbsp;<label>Book name:</label>
+							<td>&nbsp;&nbsp;<label>Book name:</label>
 								<label>
 									<?php echo $products_array[(int)$cartItem['id']]['name']?>
-								</label>&nbsp;&nbsp;&nbsp;
+								</label>&nbsp;&nbsp;
 								<label>option:</label>
 								<label>
 									<?php echo $cartItem['option'];?>
@@ -58,13 +58,16 @@
 								<label>Quantity:</label>
 								<label>
 									<?php echo $cartItem['qty'];?>
-								</label>&nbsp;&nbsp;&nbsp;
+								</label>&nbsp;&nbsp;
 								<label>Price:</label>
 								<label>$<?php echo $products_array[(int)$cartItem['id']]['price']?>
-								</label>&nbsp;&nbsp;&nbsp;
+                                <label>Subtotal$<?php echo $products_array[(int)$cartItem['id']]['price']*$cartItem['qty'];?>
+								</label>&nbsp;&nbsp;
 							</td>
 						</tr>
-						<?php } ?>
+						<tr><td colspan="2">
+					<?php $total+=$products_array[(int)$cartItem['id']]['price']*$cartItem['qty'];}?>
+					<label>Total Price : $</label><?php echo $total; ?></td></tr>
 					</table>
 				</div>
 			</div>

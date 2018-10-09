@@ -43,15 +43,19 @@
 						echo isset ($_POST['Postcode'])? $_POST['Postcode']:"" ?>  <br>
 						products details:  <br>
 										<?php 
+										$total=0;
+									
        if( isset($_SESSION['cart_arr']))
 					foreach ($_SESSION['cart_arr'] as $cartItem)  {?>
 										<?php echo $products_array[(int)$cartItem['id']]['name']?>
 										<?php echo $cartItem['option'];?>
 										<?php echo $cartItem['qty'];?>
-										<?php echo '<br>';
-									} ?>
+										<?php echo '<br>';?>
+									<?php $total+=$products_array[(int)$cartItem['id']]['price']*$cartItem['qty'];}?>
+					<label>Total Price : $</label><?php echo $total; ?><br>
+					
 
-																	Total Price: 222 <br>
+																	
 																	Thank you for shopping with Alza </p>
 										<img src="images/logo.jpg" height="150px" width="230px" >   
 
