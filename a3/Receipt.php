@@ -1,7 +1,7 @@
 	<?php		
 	session_start();
 	include 'tools.php';
-	checkoutValidation();	
+	checkoutValidation();
 	saveOrder();
 	?>
 
@@ -17,26 +17,12 @@
 		<?php include 'header.php'?>
 		<?php
 	$products_array = getProductsArr();
-
-	if (isset($_POST["id"])) {
-		$_SESSION['cart_arr'][]=$_POST; 
-	}
-	else if (isset($_GET['clearAll']) && $_GET['clearAll']=='true') {
-		unset($_SESSION['cart_arr']);
-	}
-	
-	
 ?>
-
-
 		<div class="mainContainer">
 			<div class="fullLightGreyBox">
 
 				<div class="container">
 					<div class = "con">
-
-
-
 						<p> name: <?php  echo isset ($_POST['name'])? $_POST['name']:"" ?><br>
 						Address:<?php 
 						echo isset ($_POST['address'])? $_POST['address']:""."    "; 

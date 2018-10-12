@@ -5,11 +5,21 @@ function saveOrder() {
 	
 	$products_array = getProductsArr();
 	
-	$orderId = getLastOrderId()+1;
 	if(isset($_SESSION['cart_arr']))
 	foreach ($_SESSION['cart_arr'] as $cartItem)  {
+		//check if the id is valid
+		$id = $cartItem['id'];
+		if (!isset($products_array[(int)$id])) {
+			continue;
+		}
+	
+		//check if the id is valid
+		if ($cartItem['option'] !== "softcover" && $cartItem['option'] !== "hardcover") {
+			continue;
+		}
+		
 		fwrite($ordersFile,"\n".$dateNow->format('Y-m-d H:i:s')."\t".$_POST["name"]."\t".$_POST["email"]."\t".$_POST["mobile"]."\t".
-		$_POST["address"]."\t".$cartItem['id']."\t".$orderId."\t".$cartItem['qty']."\t".$products_array[(int)$cartItem['id']]['price']."\t".
+		$_POST["address"]."\t".$cartItem['id']."\t".$cartItem['option']."\t".$cartItem['qty']."\t".$products_array[(int)$cartItem['id']]['price']."\t".
 		$products_array[(int)$cartItem['id']]['price']*$cartItem['qty']);
 	}
 	fclose($ordersFile);
@@ -57,38 +67,43 @@ $productsFile = fopen("products.txt", "r") or die("Unable to open file!");
 	}
 	
 function checkoutValidation() {
+		$_SESSION['chkDetails']['name'] = $_POST["name"];
+		$_SESSION['chkDetails']['email'] = $_POST["email"];
+		$_SESSION['chkDetails']['address'] = $_POST["address"];
+		$_SESSION['chkDetails']['mobile'] = $_POST["mobile"];
+
 			$isError = false;
 			$ErrorMsg = "";
 			if (!isset($_POST["name"]) || !preg_match("/^[a-zA-Z ,'-\.]+$/",$_POST["name"])) {
 				echo "Error name";
 				$isError = true;
-				$ErrorMsg = "Please enter name using only Alphabetic characters and space, full stop, comma, single quote and hyphen. ";
+				$ErrorMsg = "Please enter a valid Name.";
 			}
 			if (!isset($_POST["email"]) || !filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
 				Echo "Error Email";
 				$isError = true;
-				$ErrorMsg = $ErrorMsg." <br> Please enter a valid email address. ";				
+				$ErrorMsg = $ErrorMsg." <br> Please enter a valid Email address. ";	
 			}				
 			if (!isset($_POST["address"]) || !preg_match("#^[a-zA-Z0-9 ,'-\./]+$#",$_POST["address"])) {
 				Echo "Error Address";
 				$isError = true;
-				$ErrorMsg = $ErrorMsg." <br> please enter Address using only Alphanumeric characters and space, full stop, comma, single quote and hyphen. ";
+				$ErrorMsg = $ErrorMsg." <br> Please enter a valid Address.";
 			}
 			if (!isset($_POST["mobile"]) || !preg_match("/^(\+614|04|\(04\))[0-9]{8}$/",$_POST["mobile"])) {
 				Echo "Error Mobile";
 				$isError = true;
-				$ErrorMsg = $ErrorMsg." <br> please enter Address using only Alphanumeric characters and space, full stop, comma, single quote and hyphen. ";
+				$ErrorMsg = $ErrorMsg." <br> Please enter a valid Mobile number.";
 			}
 			if (!isset($_POST["credit"]) || !preg_match("/^[0-9 ]{12,19}$/",$_POST["credit"])) {
 				Echo "Error Credit";
 				$isError = true;
-				$ErrorMsg = $ErrorMsg." <br> please enter Address using only Alphanumeric characters and space, full stop, comma, single quote and hyphen. ";
+				$ErrorMsg = $ErrorMsg." <br> Please enter a valid Credit Card number.";
 			}
 
 			if (!isset($_POST["date"])) {
 				Echo "Error date";
 				$isError = true;
-				$ErrorMsg = $ErrorMsg." <br> please enter Address using only Alphanumeric characters and space, full stop, comma, single quote and hyphen. ";
+				$ErrorMsg = $ErrorMsg." <br> Please enter a valid expiry date.";
 			} 
 			else {
 			//Echo "<BR>".$_POST["date"];
@@ -102,13 +117,13 @@ function checkoutValidation() {
 			if ($diff->format("%R%a") < 28) {
 				Echo "Error date";
 				$isError = true;
-				$ErrorMsg = $ErrorMsg." <br> please enter Address using only Alphanumeric characters and space, full stop, comma, single quote and hyphen. ";
+				$ErrorMsg = $ErrorMsg." <br> Please enter a valid expiry date.";
 
 			}
 			}
 	
 	if ($isError) {
-		header('Location: checkout.php');
+		header("Location: checkout.php?err=$ErrorMsg");
 		exit;
 	}
 }

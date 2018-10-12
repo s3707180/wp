@@ -14,6 +14,7 @@
 	}
 	else if (isset($_GET['clearAll']) && $_GET['clearAll']=='true') {
 		unset($_SESSION['cart_arr']);
+		header('Location: products.php');
 	}
 	
 ?>
@@ -33,7 +34,7 @@
 					</button>
 				</a>
 
-
+<Div class="errMsg"> <?php if (isset($_GET['err'])) {echo $_GET['err'];} ?> </Div>
 				<div class="hed">
                 Shopping Cart
 					<table>

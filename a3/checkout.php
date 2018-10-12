@@ -1,37 +1,37 @@
 <?php
 session_start();
+
+/*
+echo $_SESSION['chkDetails'];
+echo $chkDetails['name'];
+if (isset($_SESSION['chkDetails'])) {
+	$chkDetails = $_SESSION['chkDetails'];
+	$name = isset($chkDetails['name']) ? $chkDetails['name'] : "";
+	$email = isset($chkDetails['email']) ? $chkDetails['email'] : "";	
+	$address = isset($chkDetails['address']) ? $chkDetails['address'] : "";	
+	$mobile = isset($chkDetails['mobile']) ? $chkDetails['mobile'] : "";	
+} else {
+	$name = "";
+	$email = "";
+	$address = "";
+	$mobile = "";
+}
+*/
+	if (!isset($_SESSION['cart_arr'])) {
+		header("Location: cart.php?err=Cannot checkout. Cart is empty.");
+	}
+
 ?>
 <!DOCTYPE HTML>
 <html>
 
 <?php
 	include 'head.php' ;
-	head_module('checkout');	?>
+	head_module('checkout');
+?>
 
 <body>
-    <div class="logo">
-        <a href="index.php">
-            <img src="images/logo.jpg" height="191px" width="300px">
-        </a>
-    </div>
-
-    <div class="Header">
-
-        <nav class="PrimaryNavigation">
-            <form method="get" action="/search" id="search1">
-                <a href="index.php">Home</a>
-                <a href="products.php">Products</a>
-                <a href="login.php">Log-in</a>
-                <a href="aboutus.php">About Us</a>
-
-                <input id="search" type="text" placeholder="search" />
-                <a href="cart.php">🛒</a>
-            </form>
-        </nav>
-
-    </div>
-    <div class="row">
-        <div class="col-75">
+	<?php include 'header.php'?>
             <div class="mainContainer">
                 <div class="fullLightGreyBox">
 				<form method="POST" action="Receipt.php">
@@ -42,23 +42,23 @@ session_start();
 
                         <h2>Checkout</h2>
                         <h3>Your details</h3>
-						
+						<Div class="errMsg"> <?php if (isset($_GET['err'])) echo $_GET['err']; ?> </Div>
 						<!-- pattern="[a-zA-Z0-9 ,'-\.]+" -->
                     <table>
 						<tr><td> <label for="name"><i class="name"> Full Name&nbsp;&nbsp;</i></label></td>
-                            <td colspan="2"><input type="text"  id="name" name="name"  placeholder="Mark Smith"   style="width:100%; height:20px" ></td></tr>
+                            <td colspan="2"><input type="text"  id="name" name="name" placeholder="Mark Smith"   style="width:100%; height:20px" required /></td></tr>
                          <tr><td><label for="email"><i class="eamil"></i> Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></td>
-                             <td colspan="2"><input type="text" id="email" name="email" placeholder="mark@gmail.com" style="width:100%; height:20px" ></td></tr>
+                             <td colspan="2"><input type="text" id="email" name="email" placeholder="mark@gmail.com" style="width:100%; height:20px" required /></td></tr>
 						 <tr><td> <label for="address"><i class="address"></i> Address&nbsp;&nbsp;&nbsp;</label></td>
-                            <td colspan="2"> <textarea rows="5" cols="50" id="address" name="address" placeholder="24 Mcivor street"` ></textarea> </td></tr>
+                            <td colspan="2"> <textarea rows="5" cols="50" id="address" name="address" placeholder="24 Mcivor street" required /></textarea> </td></tr>
 
 
                            <tr><td> <label for="mobile"><i class="mobile"></i> Mobile Phone&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></td>
-                          <td colspan="2">  <input type="text" id="mobile" name="mobile" placeholder="+614..." style="width:100%; height:20px" ></td></tr>
+                          <td colspan="2">  <input type="text" id="mobile" name="mobile" placeholder="+614..." style="width:100%; height:20px" required ></td></tr>
                         <tr><td>    <label for="credit">Credit card&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></td>
-                           <td> <input oninput="creditVisaLogoUpdate();" type="text" id="credit" name="credit" placeholder="Credit card number" style="width:100%; height:20px"></td><td><img id='visa_logo' src="images/visa.png" class="activeLogo"></td></tr>
+                           <td> <input oninput="creditVisaLogoUpdate();" type="text" id="credit" name="credit" placeholder="Credit card number" style="width:100%; height:20px" required></td><td><img id='visa_logo' src="images/visa.png" class="activeLogo"></td></tr>
                         <tr><td>  <label for="date">Expiry Date</label></td>
-                           <td colspan="2"><input type="date" id="date" name="date" value="<?php echo date('Y-m-d'); ?>" placeholder="MM/YYYY" style="width:100%; height:20px" required></td></tr>
+                           <td colspan="2"><input type="date" id="date" name="date" placeholder="MM/YYYY" style="width:100%; height:20px" required></td></tr>
 					
 					</table>
 					</form>
