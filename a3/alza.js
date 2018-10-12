@@ -35,8 +35,8 @@ function subtotalCalcul(){
 
 function creditVisaLogoUpdate() {
 	var value = document.getElementById('credit').value;
-	
-	var patt = new RegExp("^[0-9 ]{12,19}$");
+	value = value.replace(/ /g,'');
+	var patt = new RegExp("^4[0-9]{12,15}$");
 	//var patt = new RegExp("a");
 	var res = patt.test(value);
 	

@@ -8,8 +8,6 @@
 
 		<body>
 <?php include 'header.php'?>
-
-
 				<div class="mainContainer">
 					<div class="fullLightGreyBox">
 						<form action="https://titan.csit.rmit.edu.au/~e54061/wp/processing.php?ref=login" method="post">

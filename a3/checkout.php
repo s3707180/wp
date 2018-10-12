@@ -42,23 +42,34 @@ if (isset($_SESSION['chkDetails'])) {
 
                         <h2>Checkout</h2>
                         <h3>Your details</h3>
-						<Div class="errMsg"> <?php if (isset($_GET['err'])) echo $_GET['err']; ?> </Div>
+<!--header("Location: checkout.php?errName=$errName&errEmail=$errEmail&errAddress=$errAddress&errMobile=$errMobile&errCredit=$errCredit&errDate=$errDate"); -->
+						
 						<!-- pattern="[a-zA-Z0-9 ,'-\.]+" -->
                     <table>
 						<tr><td> <label for="name"><i class="name"> Full Name&nbsp;&nbsp;</i></label></td>
-                            <td colspan="2"><input type="text"  id="name" name="name" placeholder="Mark Smith"   style="width:100%; height:20px" required /></td></tr>
+                            <td colspan="2"><input type="text"  id="name" name="name" placeholder="Mark Smith"   style="width:100%; height:20px" required /></td>
+							<td class="errMsg"> <?php if (isset($_GET['errName'])) echo $_GET['errName']; ?></td>
+						</tr>
                          <tr><td><label for="email"><i class="eamil"></i> Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></td>
-                             <td colspan="2"><input type="text" id="email" name="email" placeholder="mark@gmail.com" style="width:100%; height:20px" required /></td></tr>
+                             <td colspan="2"><input type="text" id="email" name="email" placeholder="mark@gmail.com" style="width:100%; height:20px" required /></td>
+							 <td class="errMsg"> <?php if (isset($_GET['errEmail'])) echo $_GET['errEmail']; ?></td>
+						</tr>
 						 <tr><td> <label for="address"><i class="address"></i> Address&nbsp;&nbsp;&nbsp;</label></td>
-                            <td colspan="2"> <textarea rows="5" cols="50" id="address" name="address" placeholder="24 Mcivor street" required /></textarea> </td></tr>
-
-
+                            <td colspan="2"> <textarea rows="5" cols="50" id="address" name="address" placeholder="24 Mcivor street" required /></textarea> </td>
+							<td class="errMsg"> <?php if (isset($_GET['errAddress'])) echo $_GET['errAddress']; ?></td>
+						</tr>
                            <tr><td> <label for="mobile"><i class="mobile"></i> Mobile Phone&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></td>
-                          <td colspan="2">  <input type="text" id="mobile" name="mobile" placeholder="+614..." style="width:100%; height:20px" required ></td></tr>
+                          <td colspan="2">  <input type="text" id="mobile" name="mobile" placeholder="+614..." style="width:100%; height:20px" required ></td>
+						  <td class="errMsg"> <?php if (isset($_GET['errMobile'])) echo $_GET['errMobile']; ?></td>
+						</tr>
                         <tr><td>    <label for="credit">Credit card&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></td>
-                           <td> <input oninput="creditVisaLogoUpdate();" type="text" id="credit" name="credit" placeholder="Credit card number" style="width:100%; height:20px" required></td><td><img id='visa_logo' src="images/visa.png" class="activeLogo"></td></tr>
+                           <td> <input oninput="creditVisaLogoUpdate();" type="text" id="credit" name="credit" placeholder="Credit card number" style="width:100%; height:20px" required></td><td><img id='visa_logo' src="images/visa.png" class="activeLogo"></td>
+						   <td class="errMsg"> <?php if (isset($_GET['errCredit'])) echo $_GET['errCredit']; ?></td>
+						</tr>
                         <tr><td>  <label for="date">Expiry Date</label></td>
-                           <td colspan="2"><input type="date" id="date" name="date" placeholder="MM/YYYY" style="width:100%; height:20px" required></td></tr>
+                           <td colspan="2"><input type="date" id="date" name="date" placeholder="MM/YYYY" style="width:100%; height:20px" required></td>
+						   <td class="errMsg"> <?php if (isset($_GET['errDate'])) echo $_GET['errDate']; ?></td>
+						</tr>
 					
 					</table>
 					</form>

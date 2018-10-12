@@ -73,37 +73,32 @@ function checkoutValidation() {
 		$_SESSION['chkDetails']['mobile'] = $_POST["mobile"];
 
 			$isError = false;
-			$ErrorMsg = "";
 			if (!isset($_POST["name"]) || !preg_match("/^[a-zA-Z ,'-\.]+$/",$_POST["name"])) {
-				echo "Error name";
 				$isError = true;
-				$ErrorMsg = "Please enter a valid Name.";
+				$errName = "Please enter a valid Name.";
 			}
 			if (!isset($_POST["email"]) || !filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
-				Echo "Error Email";
 				$isError = true;
-				$ErrorMsg = $ErrorMsg." <br> Please enter a valid Email address. ";	
+				$errEmail = "Please enter a valid Email address. ";	
 			}				
 			if (!isset($_POST["address"]) || !preg_match("#^[a-zA-Z0-9 ,'-\./]+$#",$_POST["address"])) {
-				Echo "Error Address";
 				$isError = true;
-				$ErrorMsg = $ErrorMsg." <br> Please enter a valid Address.";
+				$errAddress = "Please enter a valid Address.";
 			}
 			if (!isset($_POST["mobile"]) || !preg_match("/^(\+614|04|\(04\))[0-9]{8}$/",$_POST["mobile"])) {
-				Echo "Error Mobile";
 				$isError = true;
-				$ErrorMsg = $ErrorMsg." <br> Please enter a valid Mobile number.";
+				$errMobile = "Please enter a valid Mobile number.";
 			}
 			if (!isset($_POST["credit"]) || !preg_match("/^[0-9 ]{12,19}$/",$_POST["credit"])) {
 				Echo "Error Credit";
 				$isError = true;
-				$ErrorMsg = $ErrorMsg." <br> Please enter a valid Credit Card number.";
+				$errCredit = "Please enter a valid Credit Card number.";
 			}
 
 			if (!isset($_POST["date"])) {
 				Echo "Error date";
 				$isError = true;
-				$ErrorMsg = $ErrorMsg." <br> Please enter a valid expiry date.";
+				$errDate = "Please enter a valid expiry date.";
 			} 
 			else {
 			//Echo "<BR>".$_POST["date"];
@@ -117,13 +112,12 @@ function checkoutValidation() {
 			if ($diff->format("%R%a") < 28) {
 				Echo "Error date";
 				$isError = true;
-				$ErrorMsg = $ErrorMsg." <br> Please enter a valid expiry date.";
-
+				$errDate = "Please enter a valid expiry date.";
 			}
 			}
 	
 	if ($isError) {
-		header("Location: checkout.php?err=$ErrorMsg");
+		header("Location: checkout.php?errName=$errName&errEmail=$errEmail&errAddress=$errAddress&errMobile=$errMobile&errCredit=$errCredit&errDate=$errDate");
 		exit;
 	}
 }
