@@ -4,11 +4,9 @@ session_start();
 <!DOCTYPE HTML>
 <html>
 
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>John Leonard Press : About</title>
-    <link href="css/style.css" rel="stylesheet" type="text/css" />
-</head>
+<?php
+	include 'head.php' ;
+	head_module('checkout');	?>
 
 <body>
     <div class="logo">
@@ -48,21 +46,19 @@ session_start();
 						<!-- pattern="[a-zA-Z0-9 ,'-\.]+" -->
                     <table>
 						<tr><td> <label for="name"><i class="name"> Full Name&nbsp;&nbsp;</i></label></td>
-                            <td><input type="text"  id="name" name="name"  placeholder="Mark Smith"   style="width:100%; height:20px" ></td></tr>
+                            <td colspan="2"><input type="text"  id="name" name="name"  placeholder="Mark Smith"   style="width:100%; height:20px" ></td></tr>
                          <tr><td><label for="email"><i class="eamil"></i> Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></td>
-                             <td><input type="text" id="email" name="email" placeholder="mark@gmail.com" style="width:100%; height:20px" ></td></tr>
-
-
-							 <tr><td> <label for="address"><i class="address"></i> Address&nbsp;&nbsp;&nbsp;</label></td>
-                          <td> <textarea rows="5" cols="50" id="address" name="address" placeholder="24 Mcivor street"` ></textarea> </td></tr>
+                             <td colspan="2"><input type="text" id="email" name="email" placeholder="mark@gmail.com" style="width:100%; height:20px" ></td></tr>
+						 <tr><td> <label for="address"><i class="address"></i> Address&nbsp;&nbsp;&nbsp;</label></td>
+                            <td colspan="2"> <textarea rows="5" cols="50" id="address" name="address" placeholder="24 Mcivor street"` ></textarea> </td></tr>
 
 
                            <tr><td> <label for="mobile"><i class="mobile"></i> Mobile Phone&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></td>
-                          <td>  <input type="text" id="mobile" name="mobile" placeholder="+614..." style="width:100%; height:20px" ></td></tr>
+                          <td colspan="2">  <input type="text" id="mobile" name="mobile" placeholder="+614..." style="width:100%; height:20px" ></td></tr>
                         <tr><td>    <label for="credit">Credit card&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></td>
-                           <td> <input type="text" id="credit" name="credit" placeholder="Credit card number" style="width:100%; height:20px" ></td></tr>
-                          <tr><td>  <label for="date">Expiry Date</label></td>
-                           <td><input type="date" id="date" name="date" value="<?php echo date('Y-m-d'); ?>" placeholder="MM/YYYY" style="width:100%; height:20px" required></td></tr>
+                           <td> <input oninput="creditVisaLogoUpdate();" type="text" id="credit" name="credit" placeholder="Credit card number" style="width:100%; height:20px"></td><td><img id='visa_logo' src="images/visa.png" class="activeLogo"></td></tr>
+                        <tr><td>  <label for="date">Expiry Date</label></td>
+                           <td colspan="2"><input type="date" id="date" name="date" value="<?php echo date('Y-m-d'); ?>" placeholder="MM/YYYY" style="width:100%; height:20px" required></td></tr>
 					
 					</table>
 					</form>

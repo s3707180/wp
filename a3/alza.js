@@ -32,3 +32,18 @@ function subtotalCalcul(){
 	
 	 document.getElementById("subtotal").innerHTML =qty*price;
 }
+
+function creditVisaLogoUpdate() {
+	var value = document.getElementById('credit').value;
+	
+	var patt = new RegExp("^[0-9 ]{12,19}$");
+	//var patt = new RegExp("a");
+	var res = patt.test(value);
+	
+	if(res) {
+		document.getElementById('visa_logo').style.visibility = "visible";
+	}
+	else {
+		document.getElementById('visa_logo').style.visibility = "hidden";
+	}
+}

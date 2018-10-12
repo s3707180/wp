@@ -19,6 +19,12 @@
     border-radius: 10px;
 }
 
+.activeLogo {
+	width:32px;
+	height:32px;
+	visibility:hidden;
+}
+
 @font-face {
     font-family: Merienda;
     src: url('Merienda-Regular.ttf');

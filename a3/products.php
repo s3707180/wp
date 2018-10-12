@@ -5,10 +5,13 @@
 		
 		if (isset($_GET['id'])){
 			$id = $_GET['id'];
+			
+			if (!isset($products_array[$id])) {
+				header("Location: products.php");
+			}
 		}
  ?>
  
-
 <!DOCTYPE HTML>
 <html>
 	<?php include 'head.php' ;
