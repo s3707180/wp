@@ -1,6 +1,8 @@
 <!DOCTYPE HTML>
 <html>
-	<?php include 'head.php' ;
+	<?php 
+		session_start();
+	include 'head.php' ;
 	head_module('Log-in');	?>
 	
 
