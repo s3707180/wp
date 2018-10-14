@@ -56,7 +56,7 @@
 
 					<?php 
 					//clear the cart after the receipt is displayed
-			//		unset($_SESSION['cart_arr']);
+					unset($_SESSION['cart_arr']);
 					include 'footer.php'?>
 
 				</body>

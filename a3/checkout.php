@@ -48,7 +48,7 @@ if (isset($_SESSION['chkDetails'])) {
                     <table>
 						<tr><td> <label for="name"><i class="name"> Full Name&nbsp;&nbsp;</i></label></td>
                             <td colspan="2"><input type="text"  id="name" name="name" placeholder="Mark Smith"   style="width:100%; height:20px" required /></td>
-							<td class="errMsg"> <?php if (isset($_GET['errName'])) echo $_GET['errName']; ?></td>
+							<td class="errMsg"> <?php if (isset($_GET['errName'])) echo $_GET['errN']; ?></td>
 						</tr>
                          <tr><td><label for="email"><i class="eamil"></i> Email&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label></td>
                              <td colspan="2"><input type="text" id="email" name="email" placeholder="mark@gmail.com" style="width:100%; height:20px" required /></td>
