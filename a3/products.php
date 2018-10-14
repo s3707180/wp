@@ -1,5 +1,14 @@
 <?php 
-		include 'tools.php';
+
+$productsFile = fopen("products.txt", "r") or die("Unable to open file!");
+		/*do{
+			$productsStr = fgetcsv ($productsFile, filesize("products.txt"),"\t");
+				
+
+		}while ($productsStr!=false);
+		
+		fclose($productsFile);
+		*/include 'tools.php';
 		$products_array = getProductsArr();
 		
 		
@@ -33,4 +42,4 @@ else { include 'partial_prodcts.php';}?>
 
 				</body>
 			</html>
-			
+		

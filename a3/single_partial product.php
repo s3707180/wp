@@ -45,8 +45,8 @@
 												</th>
 												<th>
 													<select name="option">
-														<option value="hardcover">Hardcover</option>
-														<option value="softcover">Softcover</option>
+														<option value=<?php echo $products_array[$id]['OID1'] ?>><?php echo $products_array[$id]['option1'] ?></option>
+														<option value=<?php echo $products_array[$id]['OID2'] ?>><?php echo $products_array[$id]['option2'] ?></option>
 													</select>
 												</th> 
 											</tr>

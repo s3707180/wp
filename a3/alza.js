@@ -29,8 +29,10 @@ function subtotalCalcul(){
 	var qty=document.getElementById("qty").value;
 	
 	var price =document.getElementById("price").innerHTML;
+	var subtotal=qty*price;
 	
-	 document.getElementById("subtotal").innerHTML =qty*price;
+	 document.getElementById("subtotal").innerHTML =subtotal.toFixed(2);
+
 }
 
 function creditVisaLogoUpdate() {

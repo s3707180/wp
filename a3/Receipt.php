@@ -24,7 +24,7 @@
 				<div class="container">
 					<div class = "con">
 						<p> name: <?php  echo isset ($_POST['name'])? $_POST['name']:"" ?><br>
-						Address:<?php 
+						Address: <?php 
 						echo isset ($_POST['address'])? $_POST['address']:""."    "; 
 						echo isset ($_POST['city'])? $_POST['city']:""."    ";
 						echo isset ($_POST['state'])? $_POST['state']:""."    ";
@@ -36,8 +36,8 @@
        if( isset($_SESSION['cart_arr']))
 					foreach ($_SESSION['cart_arr'] as $cartItem)  {?>
 										<?php echo $products_array[(int)$cartItem['id']]['name']?>
-										<?php echo $cartItem['option'];?>
-										<?php echo $cartItem['qty'];?>
+									, <?php echo getOption((int)$cartItem['id'], $products_array, $cartItem['option']);?>
+										, Quantity: <?php echo $cartItem['qty'];?>
 										<?php echo '<br>';?>
 									<?php $total+=$products_array[(int)$cartItem['id']]['price']*$cartItem['qty'];}?>
 					<label>Total Price : $</label><?php echo $total; ?><br>
@@ -56,9 +56,12 @@
 
 					<?php 
 					//clear the cart after the receipt is displayed
-					unset($_SESSION['cart_arr']);
+			//		unset($_SESSION['cart_arr']);
 					include 'footer.php'?>
 
 				</body>
 			</html>
-			
+<?php 
+	preShow($_POST);
+	printMyCode();
+?>

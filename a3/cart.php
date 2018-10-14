@@ -52,7 +52,7 @@
 								</label>&nbsp;&nbsp;
 								<label>option:</label>
 								<label>
-									<?php echo $cartItem['option'];?>
+									<?php echo getOption((int)$cartItem['id'], $products_array, $cartItem['option']);?>
 								</label>
 								<label>Quantity:</label>
 								<label>
@@ -85,3 +85,4 @@
 	</body>
 
 </html>
+

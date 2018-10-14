@@ -14,6 +14,7 @@
                                             <li> 0400000000</li>
 								            <li> alza@gmail.com </li>
 								            <li> Copyright 2018</li>
+											<li> <a href="products.txt">products.txt </a></li>
 											<li> <a href="orders.txt">orders.txt </a></li>
 										</ul>
 									</td>
